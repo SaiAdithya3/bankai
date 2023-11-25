@@ -5,10 +5,10 @@ const Dashboard = () => {
   return (
     <>
       <div className='flex'>
-        <div className='w-[20%]'>
+        <div className='w-[18%]'>
           <Sidebar />
         </div>
-        <div className='bg-black h-full w-[80%] text-white '>
+        <div className='bg-white flex items-center justify-center w-[100%] text-black '>
           <h1>Dashboard</h1>
         </div>
       </div>
