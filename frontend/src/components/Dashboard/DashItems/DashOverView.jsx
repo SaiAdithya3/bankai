@@ -2,7 +2,7 @@ import React from 'react'
 
 const DashOverView = () => {
   return (
-    <div>DashOverView</div>
+    <div className='p-4'>DashOverView</div>
   )
 }
 

@@ -1,0 +1,73 @@
+{
+    "sky": {
+        "name": "Sky recidencies",
+        "location": "Kukatpally",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.99acres.com%2Fsky-residency-kukatpally-hyderabad-npxid-r100&psig=AOvVaw0QZ6X6Z9Z4Z4Z4Z4Z4Z4Z4&ust=1624276148664000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJjQ4ZqH0_ECFQAAAAAdAAAAABAD",
+        "number-of-flats": "100",
+        "flats": {
+            "A101": {
+                "index": "1",
+                "name": "A101",
+                "size": "2000sqft",
+                "price": "50lakhs",
+                "block" : "A",
+                "floor" : "1",
+                "status" : "available"
+            },
+            "A102": {
+                "index": "2",
+                "name": "A102",
+                "size": "1800sqft",
+                "price": "50lakhs",
+                "block" : "C",
+                "floor" : "1",
+                "status" : "booked",
+                "owner" : "shiva"
+            },
+            "A103": {
+                "index": "3",
+                "name": "A103",
+                "size": "1324sqft",
+                "price": "35    lakhs",
+                "block" : "A",
+                "floor" : "3",
+                "status" : "available"
+            },
+            "A104": {
+                "index": "4",
+                "name": "A104",
+                "size": "2378sqft",
+                "price": "24lakhs",
+                "block" : "B",
+                "floor" : "4",
+                "status" : "booked"
+            },
+            "A105": {
+                "index": "5",
+                "name": "A105",
+                "size": "2000sqft",
+                "price": "63lakhs",
+                "block" : "A",
+                "floor" : "5",
+                "status" : "available"
+            },
+            "A106": {
+                "index": "6",
+                "name": "A106",
+                "size": "2000sqft",
+                "price": "35lakhs",
+                "block" : "A",
+                "floor" : "6",
+                "status" : "available"
+            }
+        }
+    }
+,
+"sai": {
+    "name": "sai recidencies",
+    "location": "kukatpally",
+    "price": "50lakhs",
+    "size": "1000sqft",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.99acres.com%2Fsky-residency-kukatpally-hyderabad-npxid-r100&psig=AOvVaw0QZ6X6Z9Z4Z4Z4Z4Z4Z4Z4&ust=1624276148664000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCJjQ4ZqH0_ECFQAAAAAdAAAAABAD"
+}
+}

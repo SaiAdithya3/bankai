@@ -5,9 +5,7 @@ import DashHero from "./DashHero";
 import { useMainDashContext } from "../../context/AppDataContext";
 const OverviewComponent = lazy(() => import("./DashItems/DashOverView"));
 const BoardComponent = lazy(() => import("./DashItems/BoardComponent"));
-const DiscussionComponent = lazy(() =>
-  import("./DashItems/DiscussionComponent")
-);
+const DiscussionComponent = lazy(() => import("./DashItems/DiscussionComponent"));
 const TimelineComponent = lazy(() => import("./DashItems/TimelineComponent"));
 const FilesComponent = lazy(() => import("./DashItems/FilesComponent"));
 
