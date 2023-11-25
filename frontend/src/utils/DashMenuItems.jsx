@@ -9,7 +9,7 @@ const DashMenuItems = ({ name }) => {
   };
 
   return (
-    <div className="inline-block" onClick={handleClick}>
+    <div className="inline-block cursor-pointer" onClick={handleClick}>
       <h1
         className={`${
           activeMenuItem === name ? "text-black" : "text-gray-500"
