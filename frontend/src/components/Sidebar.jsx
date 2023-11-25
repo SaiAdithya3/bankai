@@ -1,4 +1,6 @@
 import React from 'react';
+import userjson from '../utils/user.json';
+import { useLocation } from 'react-router-dom';
 import { FaChevronRight } from "react-icons/fa6";
 import { TbBrandGithubCopilot } from "react-icons/tb";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -14,6 +16,14 @@ import { HiOutlineDocumentReport } from "react-icons/hi";
 
 
 const Sidebar = () => {
+  const data = userjson["user"];
+  const location = useLocation();
+
+  const isPageActive = (pathname) => {
+    return location.pathname === pathname;
+  };
+
+
   return (
     <div className='w-full h-[100vh] bg-gray-100 flex flex-col items-center justify-between border-r border-gray-200'>
       <div className='flex w-[90%] items-center justify-center p-5 gap-2 border-b-2 border-dashed '>
@@ -23,20 +33,44 @@ const Sidebar = () => {
       <div className='w-full h-[60%] p-4'>
         <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>DASHBOARD</p>
         <ul className='flex flex-col'>
-          <li className='text-md font-light flex items-center px-4 my-2 rounded-lg py-1 hover:scale-105 transition-all cursor-pointer bg-black text-white '> <MdSpaceDashboard className='text-white mr-2 text-xl' /> Overview</li>
-          <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <IoFolderOpen className='text-gray-500 mr-2 text-lg' /> Projects</li>
-          <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <MdPeopleAlt className='text-gray-500 mr-2 text-lg' /> Customers</li>
-          <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <SlGraph className='text-gray-500 mr-2 text-lg' /> Activities</li>
-          <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <FaMoneyBillWave className='text-gray-500 mr-2 text-lg' /> Accounts</li>
+          <a href="/dashboard"><li className={` font-light flex items-center px-4 rounded-lg py-1 hover:scale-105 transition-all cursor-pointer ${isPageActive('/dashboard') ? 'bg-black text-white my-2 text-md' : 'my-1 text-sm'}`}>
+            <MdSpaceDashboard className={` mr-2 text-xl ${isPageActive('/dashboard') ? 'text-white ' : 'text-gray-500'}`} />
+            Overview
+          </li></a>
+          <a href="/projects"><li className={` font-light flex items-center px-4 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/projects') ? 'bg-black text-white my-2 text-md' : 'my-1 text-sm'}`}>
+            <IoFolderOpen className={` mr-2 text-xl ${isPageActive('/projects') ? 'text-white ' : 'text-gray-500'}`} />
+            Projects
+          </li></a>
+          <a href="/customers"><li className={` font-light flex items-center px-4 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/customers') ? 'bg-black text-white my-2 text-md' : 'my-1 text-sm'}`}>
+            <MdPeopleAlt className={` mr-2 text-xl ${isPageActive('/customers') ? 'text-white ' : 'text-gray-500'}`} />
+            Customers
+          </li></a>
+          <a href="/activities"><li className={` font-light flex items-center px-4 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/activities') ? 'bg-black text-white my-2 text-md' : 'my-1 text-sm'}`}>
+            <SlGraph className={` mr-2 text-xl ${isPageActive('/activities') ? 'text-white ' : 'text-gray-500'}`} />
+            Activities
+          </li></a>
+          <a href="/accounts"><li className={` font-light flex items-center px-4 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/accounts') ? 'bg-black text-white my-2 text-md' : 'my-1 text-sm'}`}>
+            <FaMoneyBillWave className={` mr-2 text-xl ${isPageActive('/accounts') ? 'text-white ' : 'text-gray-500'}`} />
+            Accounts
+          </li></a>
         </ul>
       </div>
       <hr className='w-[80%] ' />
       <div className='w-full h-[60%] p-4'>
         <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>SECOND</p>
         <ul className='flex flex-col'>
-         <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <PiTarget className='text-gray-500 mr-3 text-2xl border rounded-md p-0.5 border-gray-300' /> Task List</li>
-          <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <MdOutlineContentPasteGo className='text-gray-500 mr-3 text-2xl border rounded-md p-0.5 border-gray-300' /> Approvals</li>
-          <li className='text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all'> <HiOutlineDocumentReport className='text-gray-500 mr-3 text-2xl border rounded-md p-0.5 border-gray-300' /> Reports</li>
+         <a href="task-list"> <li className={`text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/task-list') ? 'bg-black text-white' : ''}`}>
+            <PiTarget className={`text-gray-500 mr-3 text-2xl border rounded-md p-0.5 border-gray-300 ${isPageActive('/task-list') ? 'text-white  border-none ' : 'text-gray-500'}`} />
+            Task List
+          </li></a>
+          <a href="/approvals"><li className={`text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/approvals') ? 'bg-black text-white' : ''}`}>
+            <MdOutlineContentPasteGo className={`text-gray-500 mr-3 text-2xl border rounded-md p-0.5 border-gray-300 ${isPageActive('/approvals') ? 'text-white  border-none ' : 'text-gray-500'}`} />
+            Approvals
+          </li></a>
+          <a href="/reports"><li className={`text-sm font-light flex items-center px-4 my-1 rounded-lg py-1 hover:bg-gray-200 hover:scale-105 cursor-pointer transition-all ${isPageActive('/reports') ? 'bg-black text-white' : ''}`}>
+            <HiOutlineDocumentReport className={`text-gray-500 mr-3 text-2xl border rounded-md p-0.5 border-gray-300 ${isPageActive('/reports') ? 'text-white  border-none ' : 'text-gray-500'}`} />
+            Reports
+          </li></a>
         </ul>
       </div>
       <div className='flex w-[90%]'>
@@ -51,8 +85,8 @@ const Sidebar = () => {
             <span className='px-4 py-1 bg-orange-400 rounded-full '></span>
           </div>
           <div className=" px-2 flex items-start justify-center  flex-col">
-            <h1 className='text-[14px] font-semibold'>Naruto Uzumaki</h1>
-            <p className='text-[10px]'>narutouzumaki@gmail.com</p>
+            <h1 className='text-[14px] font-semibold'>{data.name}</h1>
+            <p className='text-[10px]'>{data.email}</p>
           </div>
           <FaChevronRight className='mx-2 w-full text-right ' />
         </div>
