@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
+import MainDash from '../components/Dashboard/MainDash';
 
 const Dashboard = () => {
   return (
@@ -9,7 +10,7 @@ const Dashboard = () => {
           <Sidebar />
         </div>
         <div className='bg-black h-full w-[80%] text-white '>
-          <h1>Dashboard</h1>
+          <MainDash />
         </div>
       </div>
     </>
