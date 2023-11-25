@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { FaChevronRight } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
@@ -15,9 +16,14 @@ const Sidebar = () => {
         </ul>
         </div>
 
-        <div className='w-full p-2'>
-          <div className="flex bg-white">
-            <img className='w-12 h-12 rounded-full' src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <div className='w-full p-5'>
+          <div className="flex bg-white p-3  items-center rounded-2xl shadow-2xl hover:scale-105 cursor-pointer transition-all">
+            <img className='w-10 h-10 rounded-full'  src="https://images.unsplash.com/photo-1552962599-a09af85f2555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            <div className=" px-2 flex items-start justify-center flex-col">
+              <h1 className='text-[14px] font-semibold'>Naruto Uzumaki</h1>
+              <p className='text-[10px]'>narutouzumaki@gmail.com</p>
+            </div>
+            <FaChevronRight className='mx-2 hover:translate-x-2 transition-all'/>
           </div>
         </div>
     </div>
