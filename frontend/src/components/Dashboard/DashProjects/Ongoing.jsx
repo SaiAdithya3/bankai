@@ -7,21 +7,28 @@ import image3 from "../../../assets/buildingsPics/3.jpeg";
 import image4 from "../../../assets/buildingsPics/4.jpeg";
 
 const Ongoing = () => {
+  const color = "orange";
   return (
-    <div className=" w-[23%] ">
+    <div className="  ">
       {/* <Sticky enabled={true} top={108} > */}
-      <div className="flex items-center bg-  justify-between px-3 pt-1 bg-[#fbfafc] pb-3">
+      {/* <div className="flex items-center bg-  justify-between px-3 pt-1 bg-[#fbfafc] pb-3">
         <div className="flex  items-center justify-center gap-2">
           <div className="w-2 h-2 bg-black rounded-full"></div>
           <h1>Ongoing</h1>
         </div>
         <HiOutlineDotsVertical />
-      </div>
+      </div> */}
       {/* </Sticky> */}
-      <div className=" flex flex-col gap-6">
-        <ProjecTile image={image4} name={"Sulabh Complex"} />
-        <ProjecTile image={image3} name={"Block no:38"} />
-        <ProjecTile image={image2} name={"sereite"} />
+      <div className=" flex justify-between flex-wrap  gap-y-10  px-6  gap-2 ">
+        <ProjecTile color={color} image={image4} name={"Sulabh Complex"} />
+        <ProjecTile color={color} image={image3} name={"Block no:38"} />
+        <ProjecTile color={color} image={image2} name={"Bleach"} />
+        <ProjecTile color={color} image={image3} name={"Sereite"} />
+        <ProjecTile color={color} image={image2} name={"Espada"} />
+        <ProjecTile color={color} image={image4} name={"Hecuo Mundo"} />
+        <ProjecTile color={color} image={image3} name={"Hollow"} />
+        <ProjecTile color={color} image={image4} name={"Kamado"} />
+        <ProjecTile color={color} image={image3} name={"sereite"} />
       </div>
     </div>
   );

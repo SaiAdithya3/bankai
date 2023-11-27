@@ -27,12 +27,12 @@ const Sidebar = () => {
 
   return (
     // <Sticky >
-    <div className="w-full   h-[100vh] bg-gray-100 flex flex-col items-center justify-between border-r border-gray-200">
-      <div className="flex w-[90%]  sticky top-0 items-center justify-center p-5 gap-2 border-b-2 border-dashed ">
+    <div className="w-[18%] fixed h-[100vh] bg-gray-100 flex flex-col items-center justify-between border-r border-gray-200">
+      <div className="flex w-[90%]  items-center justify-center p-5 gap-2 border-b-2 border-dashed ">
         <TbBrandGithubCopilot className="text-4xl p-2 bg-red-400 border border-red-600 rounded-full " />
         <h1 className="text-2xl font-bold text-center">Bankai</h1>
       </div>
-      <div className="w-full h-[60%] p-4 sticky top-20  ">
+      <div className="w-full h-[60%] p-4   ">
         <p className="text-xs font-bold text-gray-500 tracking-wider pl-3">
           DASHBOARD
         </p>
@@ -116,7 +116,7 @@ const Sidebar = () => {
         </a>
       </div>
     </div>
-    // </Sticky>
+    // {/* </Sticky> */}
   );
 };
 

@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className='flex'>
-        <div className='w-[18%]'>
+        <div className='w-[21%] '>
           <Sidebar />
         </div>
         <div className='w-full'>
