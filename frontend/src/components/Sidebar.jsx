@@ -1,6 +1,6 @@
-import React from "react";
-import userjson from "../utils/user.json";
-import { useLocation } from "react-router-dom";
+import React from 'react';
+import userjson from '../utils/user.json';
+import { Link, useLocation } from 'react-router-dom';
 import { FaChevronRight } from "react-icons/fa6";
 import { TbBrandGithubCopilot } from "react-icons/tb";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -95,25 +95,9 @@ const Sidebar = () => {
           />
         </ul>
       </div>
-      <div className="flex w-[90%] gap-2 ">
-        <a href="/settings" className="w-full">
-          <button
-            className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${
-              isPageActive("/settings") ? "bg-gray-800 text-white" : ""
-            }`}
-          >
-            <TbSettings /> Settings
-          </button>
-        </a>
-        <a href="/help" className="w-full">
-          <button
-            className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${
-              isPageActive("/help") ? "bg-gray-800 text-white" : ""
-            }`}
-          >
-            <BiHelpCircle /> Help
-          </button>
-        </a>
+      <div className='flex w-[90%] gap-2'>
+        <Link to="/settings" className='w-full'><button className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${isPageActive('/settings') ? 'bg-gray-800 text-white' : ''}`}><TbSettings /> Settings</button></Link>
+        <Link to="/help" className='w-full'><button className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${isPageActive('/help') ? 'bg-gray-800 text-white' : ''}`}><BiHelpCircle /> Help</button></Link>
       </div>
 
       <div className="p-5 border-t ">
