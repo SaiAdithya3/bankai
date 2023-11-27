@@ -42,13 +42,21 @@ const Sidebar = () => {
           <SidebarLink href="/accounts" icon={FaMoneyBillWave} text="Accounts" isActive={isPageActive('/accounts')} />
         </ul>
       </div>
-      <hr className='w-[80%] ' />
-      <div className='w-full h-[60%] p-4'>
+      <hr className='w-[80%] p-2' />
+      <div className='w-full h-[60%] px-4'>
         <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>SECOND</p>
         <ul className='flex flex-col'>
           <SidebarItem href="/task-list" icon={PiTarget} text="Task List" isActive={isPageActive('/task-list')} />
           <SidebarItem href="/approvals" icon={MdOutlineContentPasteGo} text="Approvals" isActive={isPageActive('/approvals')} />
           <SidebarItem href="/reports" icon={HiOutlineDocumentReport} text="Reports" isActive={isPageActive('/reports')} />
+        </ul>
+      </div>
+      <div className='w-full h-[60%] px-4'>
+        <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>TEAMS</p>
+        <ul className='flex flex-col'>
+          <SidebarItem href="/legal" icon={PiTarget} text="Legal" isActive={isPageActive('/legal')} />
+          <SidebarItem href="/purchase" icon={MdOutlineContentPasteGo} text="Purchase" isActive={isPageActive('/purchase')} />
+          <SidebarItem href="/construction" icon={HiOutlineDocumentReport} text="Construction" isActive={isPageActive('/construction')} />
         </ul>
       </div>
       <div className='flex w-[90%] gap-2'>
