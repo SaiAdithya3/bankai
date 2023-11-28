@@ -1,31 +1,29 @@
 import React, { lazy, Suspense, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { IoNotificationsOutline } from "react-icons/io5";
-import DashHero from "./DashHero";
+import ProjectDetailsHero from "./ProjectDetailsHero";
 import { useMainDashContext } from "../../context/AppDataContext";
-const OverviewComponent = lazy(() => import("./DashItems/DashOverView"));
-const BoardComponent = lazy(() => import("./DashItems/BoardComponent"));
-const DiscussionComponent = lazy(() => import("./DashItems/DiscussionComponent"));
-const TimelineComponent = lazy(() => import("./DashItems/TimelineComponent"));
-const FilesComponent = lazy(() => import("./DashItems/FilesComponent"));
+const OverviewComponent = lazy(() => import("./DetailItems/DetailsOverView"));
+const BoardComponent = lazy(() => import("./DetailItems/DetailsBoard"));
+const ListComponent = lazy(() => import("./DetailItems/DetailsList"));
+import { useParams } from "react-router-dom";
+
+
 
 const components = {
   Overview: OverviewComponent,
   Board: BoardComponent,
-  Dicussion: DiscussionComponent,
-  TimeLine: TimelineComponent,
-  Files: FilesComponent,
+  ListView: ListComponent,
 };
-
-const MainDash = () => {
+const MainProjectDetails = () => {
   const { activeMenuItem } = useMainDashContext();
   const ComponentToRender = components[activeMenuItem] || null;
-
+  const {projectId} = useParams();
   return (
     <>
       <div className=" h-screen ">
-        <div className=" bg-white">
-        <div className="flex p-4 items-center justify-between relative">
+        <div className="bg-white">
+          <div className="flex px-8 py-4 items-center justify-between relative">
             <CiSearch className="inline-block ml-3 absolute text-gray-400 w-5 h-5" />
             <input
               type="text"
@@ -39,14 +37,14 @@ const MainDash = () => {
             </div>
           </div>
           <hr className="border-gray-200" />
-          <DashHero />
+          <ProjectDetailsHero params={projectId}/>
         </div>
         <Suspense fallback={<div>Loading...</div>}>
           {ComponentToRender && <ComponentToRender />}
         </Suspense>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default MainDash;
+export default MainProjectDetails

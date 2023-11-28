@@ -1,4 +1,4 @@
-import React,{lazy,Suspense} from 'react'
+import React, { lazy, Suspense } from 'react'
 import { useMainDashContext } from '../../../context/AppDataContext'
 import TestDashCompo from './../../../Tests/TestDashCompo'
 const Ongoing = lazy(() => import("./../DashProjects/Ongoing"));
@@ -13,20 +13,20 @@ const components = {
 };
 
 const DashOverView = () => {
-    
-    const { activeMenuLinks } = useMainDashContext();
-    const ComponentToRender = components[activeMenuLinks] || null;
+
+  const { activeMenuLinks } = useMainDashContext();
+  const ComponentToRender = components[activeMenuLinks] || null;
 
 
 
   return (
     <>
-    <div className='flex justify-between  bg-white items-center px-10 py-7'>
+      <div className='flex justify-between  bg-white items-center px-10 py-7'>
         <TestDashCompo />
-    </div>
-    <Suspense fallback={<div>Loading...</div>}>
+      </div>
+      <Suspense fallback={<div>Loading...</div>}>
         {ComponentToRender && <ComponentToRender />}
-    </Suspense>
+      </Suspense>
     </>
   )
 }

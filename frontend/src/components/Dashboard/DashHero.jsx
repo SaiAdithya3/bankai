@@ -2,6 +2,10 @@ import React from "react";
 import DashMenuItems from "../../utils/DashBoardUtils/DashMenuItems";
 import DashProjects from "./DashItems/DashOverView";
 import Sticky from 'react-stickynode';
+import { IoList } from "react-icons/io5";
+import { FaBoxes } from "react-icons/fa";
+import { GrOverview } from "react-icons/gr";
+import { MdTimeline } from "react-icons/md";
 
 const DashHero = (props) => {
   const { params } = props;
@@ -19,11 +23,11 @@ const DashHero = (props) => {
       </div>
       {/* <Sticky enabled={true} top={0}   > */}
       <div className="flex  gap-10 bg-white px-8 pt-3">
-        <DashMenuItems name={"Overview"} />
-        <DashMenuItems name={"Board"} />
-        <DashMenuItems name={"Dicussion"} />
-        <DashMenuItems name={"TimeLine"} />
-        <DashMenuItems name={"Files"} />
+        <DashMenuItems name={"Overview"} icon={GrOverview}/>
+        <DashMenuItems name={"Board"} icon={FaBoxes}/>
+        <DashMenuItems name={"Dicussion"} icon={GrOverview}/>
+        <DashMenuItems name={"TimeLine"} icon={MdTimeline}/>
+        <DashMenuItems name={"Files"} icon={IoList}/>
       </div>
       <hr className="border-gray-200" />
     {/* </Sticky> */}

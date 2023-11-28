@@ -27,7 +27,7 @@ function App() {
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<ProjectDetail />} />
             <Route path="*" element={<h1>Not Found</h1>} />
-            <Route path="/:projectId" element={<Project2 />} />
+            <Route path="/:Link" element={<Project2 />} />
           </Routes>
         </div>
       </div>
