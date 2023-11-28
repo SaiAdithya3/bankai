@@ -6,6 +6,9 @@ const MainDashContext = createContext();
 export const MainDashProvider = ({ children }) => {
   const [activeMenuItem, setActiveMenuItem] = useState("Overview");
   const [activeMenuLinks, setActiveMenuLink] = useState("Ongoing");
+  const [SidebarLinks, setSidebarLinks] = useState("home");
+
+
 
   return (
     <MainDashContext.Provider
@@ -14,6 +17,9 @@ export const MainDashProvider = ({ children }) => {
         setActiveMenuItem,
         activeMenuLinks,
         setActiveMenuLink,
+        SidebarLinks,
+        setSidebarLinks,
+    
       }}
     >
       {children}
