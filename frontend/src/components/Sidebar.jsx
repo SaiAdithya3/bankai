@@ -65,7 +65,7 @@ const Sidebar = () => {
       </div>
 
       <div className='p-5 border-t'>
-        <a href="/profile">
+        <Link to="/profile">
           <div className="flex bg-white p-3  items-center rounded-xl shadow-2xl hover:scale-105 cursor-pointer transition-all">
             <div className="w-full">
               {/* <img className='rounded-full' src="https://images.unsplash.com/photo-1552962599-a09af85f2555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> */}
@@ -77,7 +77,7 @@ const Sidebar = () => {
             </div>
             <FaChevronRight className='mx-2 w-full text-right ' />
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   )
