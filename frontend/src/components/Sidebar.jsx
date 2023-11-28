@@ -27,7 +27,7 @@ const Sidebar = () => {
 
   return (
     // <Sticky >
-    <div className="w-[18%] fixed h-[100vh] bg-gray-100 flex flex-col items-center justify-between border-r border-gray-200">
+    <div className="w-[18%]  z-[3] fixed h-[100vh] bg-gray-100 flex flex-col items-center justify-between border-r border-gray-200">
       <div className="flex w-[90%]  items-center justify-center p-5 gap-2 border-b-2 border-dashed ">
         <TbBrandGithubCopilot className="text-4xl p-2 bg-red-400 border border-red-600 rounded-full " />
         <h1 className="text-2xl font-bold text-center">Bankai</h1>

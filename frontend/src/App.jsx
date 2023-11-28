@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Sidebar from './components/Sidebar';
 import ProjectDetail from './pages/ProjectDetail';
-
+import Project2 from './pages/Project2';
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/projects/:projectId" element={<ProjectDetail />} />
             <Route path="*" element={<h1>Not Found</h1>} />
-            <Route path="/:projectId" element={<ProjectDetail />} />
+            <Route path="/:projectId" element={<Project2 />} />
           </Routes>
         </div>
       </div>

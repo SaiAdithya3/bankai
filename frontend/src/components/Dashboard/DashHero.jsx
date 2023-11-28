@@ -6,8 +6,9 @@ import Sticky from 'react-stickynode';
 const DashHero = (props) => {
   const { params } = props;
   return (
-    <div>
-      <div className=" px-8 py-4 bg-white flex items-center justify-between">
+    <Sticky enabled={true} top={0}   >
+    <div className="   "> 
+      <div className=" px-8 py-4   bg-white flex items-center justify-between">
       <div className="flex items-center justify-center gap-2">
         <h1 className="text-2xl font-bold">Projects</h1>
         <h2 className="text-xl tracking-tight  text-gray-500"> / {params}</h2>
@@ -27,6 +28,7 @@ const DashHero = (props) => {
       <hr className="border-gray-200" />
     {/* </Sticky> */}
     </div>
+    </Sticky>
   );
 };
 

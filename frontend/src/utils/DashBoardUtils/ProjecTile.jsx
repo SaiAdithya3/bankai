@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 const ProjecTile = (props) => {
   const { image, name ,color} = props;
   return (
-    <div className="bg-white  flex flex-col justify-around      hover:scale-[1.03] w-[23%] h-[24rem] hover:transition-all transition-all shadow-md border
+    // hover:scale-[1.03]
+    <div className="bg-white  flex flex-col justify-around    w-[23%] h-[24rem] hover:transition-all transition-all shadow-md border
      border-gray-200 rounded-[15px] p-3  ">
       {/* <div className=" flex flex-col "> */}
       <img src={image} alt="" className="   h-40 w-[100%] rounded-[10px] " />
@@ -25,7 +26,7 @@ const ProjecTile = (props) => {
           Discription and i am latana bankai sembonzak
         </h2>
         {/* <h4>Project Deadline</h4> */}
-        <Link to={`/${name}`}>
+        <Link to={`/projects/${name}`}>
           <button className="bg-[#2d3b48] text-sm text-white w-[100%] rounded-xl p-2.5">
             View Project
           </button>
