@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import StatusBadge from '../utils/utilcomp/StatusBadge';
 import TableRow from '../utils/TableRow';
 import { CiSearch } from "react-icons/ci";
@@ -22,7 +22,7 @@ const DropdownMenu = () => {
     );
 };
 
-const ProjectDetail = () => {
+const Construction = () => {
     const [isDropdownVisible, setDropdownVisible] = useState(false);
     const [selectedStatus, setSelectedStatus] = useState("All");
     const selectedProject = projectjson["sky"];
@@ -170,4 +170,4 @@ const ProjectDetail = () => {
     )
 }
 
-export default ProjectDetail;
+export default Construction;
