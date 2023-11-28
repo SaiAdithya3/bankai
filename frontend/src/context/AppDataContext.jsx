@@ -8,12 +8,8 @@ const MainDashContext = createContext();
 export const MainDashProvider = ({ children }) => {
   const location = useLocation();
   const currentPath = location.pathname;
-
-  // Extract the base route by splitting the path
   const pathSegments = currentPath.split("/");
   const baseRoute = pathSegments[1] || ""; // Assuming the base route is the second segment
-
-  console.log(baseRoute);
   const [activeMenuItem, setActiveMenuItem] = useState("Overview");
   const [activeMenuLinks, setActiveMenuLink] = useState("Ongoing");
   const [SidebarLinks, setSidebarLinks] = useState(baseRoute);
