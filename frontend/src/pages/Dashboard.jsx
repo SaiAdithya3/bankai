@@ -8,7 +8,7 @@ const Dashboard = () => {
   const notify = () => toast.success('Modda guduv ra erripuka!.');
   return (
     <>
-      <div cl assName='flex'>
+      <div className='flex'>
         <div className='bg-[#fbfafc] h-full w-[100%]  '>
         {/* <MainDashProvider> */}
           <MainDash />

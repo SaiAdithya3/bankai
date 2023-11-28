@@ -21,7 +21,8 @@ function App() {
         <div className='w-full'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Dashboard />} />
             <Route path="/customers" element={<CustomerPage />} />
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<ProjectDetail />} />

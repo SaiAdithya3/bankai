@@ -1,6 +1,6 @@
-import React from 'react';
-import userjson from '../utils/user.json';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import userjson from "../utils/user.json";
+import { Link, useLocation } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa6";
 import { TbBrandGithubCopilot } from "react-icons/tb";
 import { MdSpaceDashboard } from "react-icons/md";
@@ -16,8 +16,11 @@ import { HiOutlineDocumentReport } from "react-icons/hi";
 import SidebarLink from "../utils/utilcomp/SidebarLink";
 import SidebarItem from "../utils/utilcomp/SidebarItem";
 import Sticky from "react-stickynode";
+import { useMainDashContext } from "../context/AppDataContext";
 
 const Sidebar = () => {
+  const { SidebarLinks,setSidebarLinks } = useMainDashContext();
+
   const data = userjson["user"];
   const location = useLocation();
 
@@ -38,60 +41,112 @@ const Sidebar = () => {
         </p>
         <ul className="flex flex-col">
           <SidebarLink
-            href="/dashboard"
+            href="home"
             icon={MdSpaceDashboard}
             text="Overview"
-            isActive={isPageActive("/dashboard")}
+            isActive={SidebarLinks === "home"}
           />
           <SidebarLink
-            href="/projects"
+            href="projects"
             icon={IoFolderOpen}
             text="Projects"
-            isActive={isPageActive("/projects")}
+            isActive={SidebarLinks === "projects"}
           />
           <SidebarLink
-            href="/customers"
+            href="customers"
             icon={MdPeopleAlt}
             text="Customers"
-            isActive={isPageActive("/customers")}
+            isActive={SidebarLinks === "customers"}
           />
           <SidebarLink
-            href="/activities"
+            href="activities"
             icon={SlGraph}
             text="Activities"
-            isActive={isPageActive("/activities")}
+            isActive={SidebarLinks === "activities"}
           />
           <SidebarLink
-            href="/accounts"
+            href="accounts"
             icon={FaMoneyBillWave}
             text="Accounts"
-            isActive={isPageActive("/accounts")}
+            isActive={SidebarLinks === "accounts"}
           />
         </ul>
       </div>
-      <hr className='w-[80%] p-2' />
-      <div className='w-full h-[60%] px-4'>
-        <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>SECOND</p>
-        <ul className='flex flex-col'>
-          <SidebarItem href="/task-list" icon={PiTarget} text="Task List" isActive={isPageActive('/task-list')} />
-          <SidebarItem href="/approvals" icon={MdOutlineContentPasteGo} text="Approvals" isActive={isPageActive('/approvals')} />
-          <SidebarItem href="/reports" icon={HiOutlineDocumentReport} text="Reports" isActive={isPageActive('/reports')} />
+      <hr className="w-[80%] p-2" />
+      <div className="w-full h-[60%] px-4">
+        <p className="text-xs font-bold text-gray-500 tracking-wider pl-3">
+          SECOND
+        </p>
+        <ul className="flex flex-col">
+          <SidebarItem
+            href="task-list"
+            icon={PiTarget}
+            text="Task List"
+            isActive={SidebarLinks === "task-list"}
+          />
+          <SidebarItem
+            href="approvals"
+            icon={MdOutlineContentPasteGo}
+            text="Approvals"
+            isActive={SidebarLinks === "approvals"}
+          />
+          <SidebarItem
+            href="reports"
+            icon={HiOutlineDocumentReport}
+            text="Reports"
+            isActive={SidebarLinks === "reports"}
+          />
         </ul>
       </div>
-      <div className='w-full h-[60%] px-4'>
-        <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>TEAMS</p>
-        <ul className='flex flex-col'>
-          <SidebarItem href="/legal" icon={PiTarget} text="Legal" isActive={isPageActive('/legal')} />
-          <SidebarItem href="/purchase" icon={MdOutlineContentPasteGo} text="Purchase" isActive={isPageActive('/purchase')} />
-          <SidebarItem href="/construction" icon={HiOutlineDocumentReport} text="Construction" isActive={isPageActive('/construction')} />
+      <div className="w-full h-[60%] px-4">
+        <p className="text-xs font-bold text-gray-500 tracking-wider pl-3">
+          TEAMS
+        </p>
+        <ul className="flex flex-col">
+          <SidebarItem
+            href="legal"
+            icon={PiTarget}
+            text="Legal"
+            isActive={SidebarLinks === "legal"}
+          />
+          <SidebarItem
+            href="purchase"
+            icon={MdOutlineContentPasteGo}
+            text="Purchase"
+            isActive={SidebarLinks === "purchase"}
+          />
+          <SidebarItem
+            href="construction"
+            icon={HiOutlineDocumentReport}
+            text="Construction"
+            isActive={SidebarLinks === "construction"}
+          />
         </ul>
       </div>
-      <div className='flex w-[90%] gap-2'>
-        <Link to="/settings" className='w-full'><button className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${isPageActive('/settings') ? 'bg-gray-800 text-white' : ''}`}><TbSettings /> Settings</button></Link>
-        <Link to="/help" className='w-full'><button className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${isPageActive('/help') ? 'bg-gray-800 text-white' : ''}`}><BiHelpCircle /> Help</button></Link>
+      <div className="flex w-[90%] gap-2">
+        <Link to="/settings" className="w-full">
+          <button
+            className={`text-sm my-2 w-full flex items-center
+           justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white
+            gap-2 bg-white border text-black py-1 rounded-lg shadow-xl 
+            ${isPageActive("/settings") ? "bg-gray-800 text-white" : ""}`}
+          >
+            <TbSettings /> Settings
+          </button>
+        </Link>
+
+        <Link to="/help" className="w-full">
+          <button
+            className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${
+              isPageActive("/help") ? "bg-gray-800 text-white" : ""
+            }`}
+          >
+            <BiHelpCircle /> Help
+          </button>
+        </Link>
       </div>
 
-      <div className='p-5 border-t'>
+      <div className="p-5 border-t">
         <Link to="/profile">
           <div className="flex bg-white p-3  items-center rounded-xl shadow-2xl hover:scale-105 cursor-pointer transition-all">
             <div className="w-full">
