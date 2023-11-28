@@ -10,7 +10,7 @@ const SidebarLink = ({ href, icon, text, isActive }) => {
     // console.log(SidebarLinks , "tt");
     setSidebarLinks(href);
   };
-  console.log(SidebarLinks , "nsfsdfame");
+  // console.log(SidebarLinks , "nsfsdfame");
 
   return (
     <Link to={href} onClick={handleClick}>

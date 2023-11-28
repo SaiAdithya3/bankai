@@ -10,7 +10,7 @@ import projectjson from '../../../utils/projects.json';
 
 const DropdownMenu = () => {
   return (
-      <div id="dropdownAction" className="z-10  ml-6 absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+      <div id="dropdownAction" className="z-10 ml-6 top-72 absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
           <ul className="py-1 text-sm text-gray-700 ">
               <li>  <a href="#" className="block px-4 py-2 hover:bg-gray-100 ">All</a> </li>
               <li> <a href="#" className="block px-4 py-2 hover:bg-gray-100 ">Completed</a></li>
