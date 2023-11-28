@@ -10,9 +10,9 @@ const Dashboard = () => {
     <>
       <div cl assName='flex'>
         <div className='bg-[#fbfafc] h-full w-[100%]  '>
-        <MainDashProvider>
+        {/* <MainDashProvider> */}
           <MainDash />
-        </MainDashProvider>
+        {/* </MainDashProvider> */}
         </div>
       </div>
     </>

@@ -25,7 +25,7 @@ const MainDash = () => {
     <>
       <div className=" h-screen ">
         <div className=" bg-white">
-          <div className=" flex p-5  items-center  justify-between relative">
+          <div className=" flex px-8 py-4 items-center  justify-between relative">
             <CiSearch className="inline-block  ml-3    absolute text-gray-400 w-5 h-5" />
             <input
               type="text"

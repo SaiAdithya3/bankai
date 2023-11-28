@@ -1,5 +1,5 @@
 import React from "react";
-import { useMainDashContext } from "../context/AppDataContext";
+import { useMainDashContext } from "../../context/AppDataContext";
 
 const DashMenuItems = ({ name }) => {
   const { activeMenuItem, setActiveMenuItem } = useMainDashContext();
@@ -12,13 +12,13 @@ const DashMenuItems = ({ name }) => {
     <div className="inline-block cursor-pointer" onClick={handleClick}>
       <h1
         className={`${
-          activeMenuItem === name ? "text-black" : "text-gray-500"
-        }`}
+          activeMenuItem === name ? "text-black" : "text-gray-400"
+        } font-bold text-md cursor-pointer`}
       >
         {name}
       </h1>
       {activeMenuItem === name && (
-        <div className="w-[100%] h-0.5 rounded bg-purple-400"></div>
+        <div className="w-[100%] h-1   rounded bg-black/60"></div>
       )}
     </div>
   );
