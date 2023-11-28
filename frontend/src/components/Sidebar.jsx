@@ -69,30 +69,21 @@ const Sidebar = () => {
           />
         </ul>
       </div>
-      <hr className="w-[80%]  " />
-      <div className="w-full h-[60%] p-4 ">
-        <p className="text-xs font-bold text-gray-500 tracking-wider pl-3">
-          SECOND
-        </p>
-        <ul className="flex flex-col">
-          <SidebarItem
-            href="/task-list"
-            icon={PiTarget}
-            text="Task List"
-            isActive={isPageActive("/task-list")}
-          />
-          <SidebarItem
-            href="/approvals"
-            icon={MdOutlineContentPasteGo}
-            text="Approvals"
-            isActive={isPageActive("/approvals")}
-          />
-          <SidebarItem
-            href="/reports"
-            icon={HiOutlineDocumentReport}
-            text="Reports"
-            isActive={isPageActive("/reports")}
-          />
+      <hr className='w-[80%] p-2' />
+      <div className='w-full h-[60%] px-4'>
+        <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>SECOND</p>
+        <ul className='flex flex-col'>
+          <SidebarItem href="/task-list" icon={PiTarget} text="Task List" isActive={isPageActive('/task-list')} />
+          <SidebarItem href="/approvals" icon={MdOutlineContentPasteGo} text="Approvals" isActive={isPageActive('/approvals')} />
+          <SidebarItem href="/reports" icon={HiOutlineDocumentReport} text="Reports" isActive={isPageActive('/reports')} />
+        </ul>
+      </div>
+      <div className='w-full h-[60%] px-4'>
+        <p className='text-xs font-bold text-gray-500 tracking-wider pl-3'>TEAMS</p>
+        <ul className='flex flex-col'>
+          <SidebarItem href="/legal" icon={PiTarget} text="Legal" isActive={isPageActive('/legal')} />
+          <SidebarItem href="/purchase" icon={MdOutlineContentPasteGo} text="Purchase" isActive={isPageActive('/purchase')} />
+          <SidebarItem href="/construction" icon={HiOutlineDocumentReport} text="Construction" isActive={isPageActive('/construction')} />
         </ul>
       </div>
       <div className='flex w-[90%] gap-2'>
@@ -100,8 +91,8 @@ const Sidebar = () => {
         <Link to="/help" className='w-full'><button className={`text-sm my-2 w-full flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-1 rounded-lg shadow-xl ${isPageActive('/help') ? 'bg-gray-800 text-white' : ''}`}><BiHelpCircle /> Help</button></Link>
       </div>
 
-      <div className="p-5 border-t ">
-        <a href="/profile">
+      <div className='p-5 border-t'>
+        <Link to="/profile">
           <div className="flex bg-white p-3  items-center rounded-xl shadow-2xl hover:scale-105 cursor-pointer transition-all">
             <div className="w-full">
               {/* <img className='rounded-full' src="https://images.unsplash.com/photo-1552962599-a09af85f2555?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> */}
@@ -113,7 +104,7 @@ const Sidebar = () => {
             </div>
             <FaChevronRight className="mx-2 w-full text-right " />
           </div>
-        </a>
+        </Link>
       </div>
     </div>
     // {/* </Sticky> */}

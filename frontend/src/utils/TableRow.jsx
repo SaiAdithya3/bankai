@@ -20,7 +20,7 @@ const TableRow = ({ index, flatName, size, status, price, editLink }) => {
             <td className="px-6 py-4">{price}</td>
             <td className="px-6 py-4 text-right">
                 <a href={editLink} className="font-medium ">
-                    <FiFeather className='text-gray-500 mr-3 text-2xl border rounded-md p-1 border-gray-300'/>
+                    <FiFeather className='text-gray-500 mr-3 cursor-pointer text-2xl border rounded-md p-1 border-gray-300'/>
                 </a>
             </td>
         </tr>
