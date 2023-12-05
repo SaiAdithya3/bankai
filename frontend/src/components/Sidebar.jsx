@@ -123,7 +123,7 @@ const Sidebar = () => {
           />
         </ul>
       </div>
-      <div className="flex w-[90%] gap-2">
+      {/* <div className="flex w-[90%] gap-2">
         <Link to="/settings" className="w-full">
           <button
             className={`text-sm my-2 w-full flex items-center
@@ -144,9 +144,9 @@ const Sidebar = () => {
             <BiHelpCircle /> Help
           </button>
         </Link>
-      </div>
+      </div> */}
 
-      <div className="p-5 border-t">
+      <div className="p-5 w-full border-t">
         <Link to="/profile">
           <div className="flex bg-white p-3  items-center rounded-xl shadow-2xl hover:scale-105 cursor-pointer transition-all">
             <div className="w-full">

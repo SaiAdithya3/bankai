@@ -12,6 +12,7 @@ export const MainDashProvider = ({ children }) => {
   const baseRoute = pathSegments[1] || ""; 
   const [activeMenuItem, setActiveMenuItem] = useState("Overview");
   const [activeMenuLinks, setActiveMenuLink] = useState("Ongoing");
+  const [projectdetailItem, setProjectDetailItem] = useState("Overview");
   const [SidebarLinks, setSidebarLinks] = useState(baseRoute);
 
   return (
@@ -23,6 +24,8 @@ export const MainDashProvider = ({ children }) => {
         setActiveMenuLink,
         SidebarLinks,
         setSidebarLinks,
+        projectdetailItem,
+        setProjectDetailItem,
       }}
     >
       {children}
