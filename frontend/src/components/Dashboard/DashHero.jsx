@@ -24,10 +24,10 @@ const DashHero = (props) => {
       {/* <Sticky enabled={true} top={0}   > */}
       <div className="flex  gap-10 bg-white px-8 pt-3">
         <DashMenuItems name={"Overview"} icon={GrOverview}/>
-        <DashMenuItems name={"Board"} icon={FaBoxes}/>
+        <DashMenuItems name={"List"} icon={IoList}/>
         <DashMenuItems name={"Dicussion"} icon={GrOverview}/>
         <DashMenuItems name={"TimeLine"} icon={MdTimeline}/>
-        <DashMenuItems name={"Files"} icon={IoList}/>
+        <DashMenuItems name={"Board"} icon={FaBoxes}/>
       </div>
       <hr className="border-gray-200" />
     {/* </Sticky> */}
