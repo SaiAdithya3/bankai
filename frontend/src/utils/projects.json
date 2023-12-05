@@ -40,7 +40,8 @@
                 "price": "24lakhs",
                 "block" : "B",
                 "floor" : "4",
-                "status" : "booked"
+                "status" : "booked",
+                "owner" : "adithya"
             },
             "A105": {
                 "index": "5",

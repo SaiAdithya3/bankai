@@ -17,7 +17,7 @@ const DashHero = (props) => {
         <h1 className="text-2xl font-bold">Projects</h1>
         <h2 className="text-xl tracking-tight  text-gray-500"> / {params}</h2>
         </div>
-        <button className="bg-[#2d3b48] text-sm text-white  rounded-md p-2">
+        <button className="bg-[#2d3b48] px-6 text-sm text-white  rounded-lg transition-all hover:scale-105 p-2 shadow-xl">
           Create Project
         </button>
       </div>
