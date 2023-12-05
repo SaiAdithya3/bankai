@@ -6,7 +6,7 @@ import image8 from "../../../assets/buildingsPics/8.jpeg";
 import image1 from "../../../assets/buildingsPics/1.jpeg";
 
 const Completed = () => {
-  const color = "green";
+  const color = "bg-green-300/60 text-green-800 border-green-800";
   return (
 <div className="  ">
       {/* <Sticky enabled={true} top={108} > */}

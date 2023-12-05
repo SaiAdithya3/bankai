@@ -16,18 +16,17 @@ const ProjecTile = (props) => {
           <h1 className=" text-xs  font-medium bg-[#2d3b48]/70  rounded px-1.5 py-0.5 text-white">
             KUKATPALLY
           </h1>
-          <StatusBadge
-            color={color}
-            
-            text="Ongoing"
-          />
+           <p className={`${color} text-center px-2 mx-1 py-1 items-center flex cursor-pointer rounded-2xl text-xs `}>
+                <span className={`p-0.5 border ${color}  mr-1 rounded-full`}></span>
+                Ongoing
+            </p>
         </div>
         <h2 className="text-sm tracking-tight pb-4">
           Discription and i am latana bankai sembonzak
         </h2>
         {/* <h4>Project Deadline</h4> */}
         <Link to={`/projects/${name}`}>
-          <button className="bg-[#2d3b48] text-sm text-white w-[100%] rounded-xl p-2.5">
+          <button className="bg-[#2d3b48] hover:scale-105 transition-all text-sm text-white w-[100%] rounded-xl p-2.5">
             View Project
           </button>
         </Link>

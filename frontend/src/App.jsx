@@ -1,14 +1,15 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import Sidebar from './components/Sidebar';
+import Home from 'src/pages/Home';
+import Dashboard from 'src/pages/Dashboard';
+import Sidebar from 'src/components/Sidebar';
 import ProjectDetail from './pages/ProjectDetail';
-import Project2 from './pages/Project2';
-import CustomerPage from './pages/CustomerPage';
-import Construction from './pages/Construction';
-import SearchHOC from './utils/utilcomp/SearchHOC';
-import Projectms from './pages/Projectms';
+import Project2 from 'src/pages/Project2';
+import CustomerPage from 'src/pages/CustomerPage';
+import Construction from 'src/pages/Construction';
+import SearchHOC from 'src/utils/utilcomp/SearchHOC';
+import Projectms from 'src/pages/Projectms';
+import OverView from 'src/components/PMS/pages/OverView';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/customers" element={<CustomerPage />} />
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<Projectms />} />
+            <Route path="/projects/:projectId/overview" element={<OverView/>} />
             <Route path="*" element={<h1>Not Found</h1>} />
             <Route path="/:Link" element={<Project2 />} />
           </Routes>

@@ -25,7 +25,6 @@ const MainDash = () => {
     <>
       <div className=" h-screen ">
         <div className=" bg-white">
-          <hr className="border-gray-200" />
           <DashHero />
         </div>
         <Suspense fallback={<div>Loading...</div>}>
