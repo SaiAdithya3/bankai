@@ -21,7 +21,7 @@ const DashOverView = () => {
 
   return (
     <>
-      <div className='flex justify-between  bg-white items-center px-10 py-7'>
+      <div className='flex justify-between   items-center px-10 py-7'>
         <TestDashCompo />
       </div>
       <Suspense fallback={<div>Loading...</div>}>

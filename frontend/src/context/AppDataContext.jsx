@@ -9,7 +9,7 @@ export const MainDashProvider = ({ children }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const pathSegments = currentPath.split("/");
-  const baseRoute = pathSegments[1] || ""; // Assuming the base route is the second segment
+  const baseRoute = pathSegments[1] || ""; 
   const [activeMenuItem, setActiveMenuItem] = useState("Overview");
   const [activeMenuLinks, setActiveMenuLink] = useState("Ongoing");
   const [projectdetailItem, setProjectDetailItem] = useState("Overview");
