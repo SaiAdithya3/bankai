@@ -10,6 +10,8 @@ import Construction from 'src/pages/Construction';
 import SearchHOC from 'src/utils/utilcomp/SearchHOC';
 import Projectms from 'src/pages/Projectms';
 import OverView from 'src/components/PMS/pages/OverView';
+import Accounts from './pages/Accounts';
+import Activities from './pages/Activities';
 
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<Projectms />} />
             <Route path="/projects/:projectId/overview" element={<OverView/>} />
+            <Route path="/accounts" element={<Accounts/>} />
+            <Route path="/activities" element={<Activities/>} />
             <Route path="*" element={<h1>Not Found</h1>} />
             <Route path="/:Link" element={<Project2 />} />
           </Routes>
