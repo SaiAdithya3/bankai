@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa6";
 import { IoFilter } from "react-icons/io5";
 import { IoIosFunnel } from "react-icons/io";
-// import customerjson from '../utils/customers.json';
+import customerjson from '../../../utils/customers.json';
 
 const DropdownMenu = () => {
   return (
@@ -22,6 +22,7 @@ const DropdownMenu = () => {
 const CustomerPage = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [selectedStatus, setSelectedStatus] = useState("All");
+  const customers = customerjson;
   // const selectedProject = customerjson;
 
   const toggleDropdown = () => {
@@ -96,6 +97,7 @@ const CustomerPage = () => {
               </tr>
             </thead>
             <tbody>
+              
               <CustomerTableRow
                 key="1"
                 index="1"

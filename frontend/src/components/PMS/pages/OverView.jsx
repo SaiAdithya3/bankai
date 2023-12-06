@@ -41,29 +41,29 @@ const OverView = (props) => {
               {/* <LuForklift className='text-8xl w-full text-blue-100' /> */}
               <img src={sh} alt="sh" className='w-20' />
             </div>
-            <div className='flex border px-8 py-8 items-end justify-between bg-green-100 cursor-pointer hover:scale-105 transition-all hover:bg-blue-300 rounded-xl  '>
+            <div className='flex border px-8 py-8 items-end justify-between bg-green-100 cursor-pointer hover:scale-105 transition-all hover:bg-green-300 rounded-xl  '>
               <h1 className='text-2xl font-semibold w-full'>Project Management <br />System</h1>
               {/* <LuForklift className='text-8xl w-full text-blue-100' /> */}
               <img src={sh} alt="sh" className='w-20' />
             </div>
-            <div className='flex border px-8 py-8 items-end justify-between bg-orange-100 cursor-pointer hover:scale-105 transition-all hover:bg-blue-300 rounded-xl  '>
+            <div className='flex border px-8 py-8 items-end justify-between bg-orange-100 cursor-pointer hover:scale-105 transition-all hover:bg-orange-300 rounded-xl  '>
               <h1 className='text-2xl font-semibold w-full'>Project Management <br />System</h1>
               {/* <LuForklift className='text-8xl w-full text-blue-100' /> */}
               <img src={sh} alt="sh" className='w-20' />
             </div>
           </div>
           <div className='flex justify-center gap-6 w-full '>
-            <div className='flex border px-8 py-8 items-end justify-between bg-pink-100 cursor-pointer hover:scale-105 transition-all hover:bg-blue-300 rounded-xl  '>
+            <div className='flex border px-8 py-8 items-end justify-between bg-pink-100 cursor-pointer hover:scale-105 transition-all hover:bg-pink-300 rounded-xl  '>
               <h1 className='text-2xl font-semibold w-full'>Project Management <br />System</h1>
               {/* <LuForklift className='text-8xl w-full text-blue-100' /> */}
               <img src={sh} alt="sh" className='w-20' />
             </div>
-            <div className='flex border px-8 py-8 items-end justify-between bg-purple-100 cursor-pointer hover:scale-105 transition-all hover:bg-blue-300 rounded-xl  '>
+            <div className='flex border px-8 py-8 items-end justify-between bg-purple-100 cursor-pointer hover:scale-105 transition-all hover:bg-purple-300 rounded-xl  '>
               <h1 className='text-2xl font-semibold w-full'>Project Management <br />System</h1>
               {/* <LuForklift className='text-8xl w-full text-blue-100' /> */}
               <img src={sh} alt="sh" className='w-20' />
             </div>
-            <div className='flex border px-8 py-8 items-end justify-between bg-slate-100 cursor-pointer hover:scale-105 transition-all hover:bg-blue-300 rounded-xl  '>
+            <div className='flex border px-8 py-8 items-end justify-between bg-slate-100 cursor-pointer hover:scale-105 transition-all hover:bg-slate-300 rounded-xl  '>
               <h1 className='text-2xl font-semibold w-full'>Project Management <br />System</h1>
               {/* <LuForklift className='text-8xl w-full text-blue-100' /> */}
               <img src={sh} alt="sh" className='w-20' />

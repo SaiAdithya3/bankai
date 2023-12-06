@@ -12,6 +12,7 @@ import Projectms from 'src/pages/Projectms';
 import OverView from 'src/components/PMS/pages/OverView';
 import Accounts from './pages/Accounts';
 import Activities from './pages/Activities';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
             <Route path="/projects/:projectId/overview" element={<OverView/>} />
             <Route path="/accounts" element={<Accounts/>} />
             <Route path="/activities" element={<Activities/>} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="*" element={<NotFound/>} />
             <Route path="/:Link" element={<Project2 />} />
           </Routes>
         </div>
