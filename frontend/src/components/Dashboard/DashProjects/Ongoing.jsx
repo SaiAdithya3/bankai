@@ -7,7 +7,7 @@ import image3 from "../../../assets/buildingsPics/3.jpeg";
 import image4 from "../../../assets/buildingsPics/4.jpeg";
 
 const Ongoing = () => {
-  const color = "orange";
+  const color = "bg-orange-300/60 text-orange-800 border-orange-800";
   return (
     <div className="  ">
       {/* <Sticky enabled={true} top={108} > */}

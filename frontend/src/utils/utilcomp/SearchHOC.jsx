@@ -1,6 +1,7 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { MdHelpOutline } from "react-icons/md";
 
 const SearchHOC = () => {
   return (
@@ -14,6 +15,7 @@ const SearchHOC = () => {
     />
     <div className="flex justify-between gap-5 items-center">
       <IoNotificationsOutline className="hover:bg-black hover:text-white cursor-pointer rounded-lg p-2 hover:scale-105 transition-all text-4xl text-gray-400  right-0" />
+      <MdHelpOutline  className="hover:bg-black hover:text-white cursor-pointer rounded-lg p-2 hover:scale-105 transition-all text-4xl text-gray-400  right-0" />
       <div className="bg-gray-400 h-5 w-[0.9px]"></div>
       <h1 className="text-black/70 font-semibold text-lg">Welcome Shiva 👋!</h1>
     </div>
