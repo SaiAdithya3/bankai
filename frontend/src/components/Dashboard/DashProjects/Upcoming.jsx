@@ -6,7 +6,7 @@ import image5 from "../../../assets/buildingsPics/5.jpeg";
 import image6 from "../../../assets/buildingsPics/6.jpeg";
 
 const Upcoming = () => {
-  const color = "blue";
+  const color = "bg-blue-300/60 text-blue-800 border-blue-800";
   return (
 <div className="  ">
       {/* <Sticky enabled={true} top={108} > */}

@@ -1,0 +1,57 @@
+{
+    "customer1": {
+        "name": "Shiva",
+        "age": 25,
+        "address": "Bangalore",
+        "phone": 1234567890,
+        "email": "shiva@mail.com",
+        "project": "Prestige Homes",
+        "flat no": "A-101",
+        "floor": "1st",
+        "block": "A"
+    },
+ "customer2": {
+        "name": "Raj",
+        "age": 25,
+        "address": "Bangalore",
+        "phone": 1234567890,
+        "email": "mourya@mail.com",
+        "project": "Prestige Homes",
+        "flat no": "A-102",
+        "floor": "1st",
+        "block": "A"
+    },
+    "customer3": {
+            "name": "Chaitanya",
+            "age": 25,
+            "address": "Bangalore",
+            "phone": 1234567890,
+            "email": "chaitu@mail.com",
+            "project": "Prestige Homes",
+            "flat no": "A-103",
+            "floor": "1st",
+            "block": "A"
+        },
+        "customer4": {
+            "name": "flyod mayweather",
+            "age": 25,
+            "address": "Bangalore",
+            "phone": 1234567890,
+            "email": "sri@mail.com",
+            "project": "Royal Homes",
+            "flat no": "A-104",
+            "floor": "1st",
+            "block": "C"
+        },
+        "customer5": {
+            "name": "Rajesh",
+            "age": 25,
+            "address": "Bangalore",
+            "phone": 1234567890,
+            "email": "kyudie@a.com",
+            "project": "Prestige Homes",
+            "flat no": "A-105",
+            "floor": "1st",
+            "block": "B"
+        }
+}

@@ -17,9 +17,10 @@ import SidebarLink from "../utils/utilcomp/SidebarLink";
 import SidebarItem from "../utils/utilcomp/SidebarItem";
 import Sticky from "react-stickynode";
 import { useMainDashContext } from "../context/AppDataContext";
+import { LuSettings } from "react-icons/lu";
 
 const Sidebar = () => {
-  const { SidebarLinks,setSidebarLinks } = useMainDashContext();
+  const { SidebarLinks, setSidebarLinks } = useMainDashContext();
 
   const data = userjson["user"];
   const location = useLocation();
@@ -31,9 +32,12 @@ const Sidebar = () => {
   return (
     // <Sticky >
     <div className="w-[18%]  z-[3] fixed h-[100vh] bg-gray-100 flex flex-col items-center justify-between border-r border-gray-200">
-      <div className="flex w-[90%]  items-center justify-center p-5 gap-2 border-b-2 border-dashed ">
-        <TbBrandGithubCopilot className="text-4xl p-2 bg-red-400 border border-red-600 rounded-full " />
-        <h1 className="text-2xl font-bold text-center">Bankai</h1>
+      <div className="flex w-[90%]  items-center justify-between p-5  border-b-2 border-dashed ">
+        <div className="flex items-center gap-2">
+          <TbBrandGithubCopilot className="text-4xl p-2 bg-red-400 border border-red-600 rounded-full " />
+          <h1 className="text-2xl font-bold text-center">Bankai</h1>
+        </div>
+        <LuSettings className="text-3xl border p-1 cursor-pointer hover:bg-black hover:text-white transition-all hover:scale-105 rounded-lg bg-gray-100" />
       </div>
       <div className="w-full h-[60%] p-4   ">
         <p className="text-xs font-bold text-gray-500 tracking-wider pl-3">
@@ -123,7 +127,7 @@ const Sidebar = () => {
           />
         </ul>
       </div>
-      <div className="flex w-[90%] gap-2">
+      {/* <div className="flex w-[90%] gap-2">
         <Link to="/settings" className="w-full">
           <button
             className={`text-sm my-2 w-full flex items-center
@@ -144,9 +148,9 @@ const Sidebar = () => {
             <BiHelpCircle /> Help
           </button>
         </Link>
-      </div>
+      </div> */}
 
-      <div className="p-5 border-t">
+      <div className="p-5 w-full border-t">
         <Link to="/profile">
           <div className="flex bg-white p-3  items-center rounded-xl shadow-2xl hover:scale-105 cursor-pointer transition-all">
             <div className="w-full">

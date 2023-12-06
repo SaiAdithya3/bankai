@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import Navbar from '../components/Navbar';
 import toast, { Toaster } from 'react-hot-toast';
-import userjson from '../utils/user.json';
+// import userjson from '../utils/user.json';
+import userjson from 'src/utils/user.json';
 
 const Home = () => {
   const user = userjson["user"];

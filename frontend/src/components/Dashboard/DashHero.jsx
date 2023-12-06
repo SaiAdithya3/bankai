@@ -17,17 +17,17 @@ const DashHero = (props) => {
         <h1 className="text-2xl font-bold">Projects</h1>
         <h2 className="text-xl tracking-tight  text-gray-500"> / {params}</h2>
         </div>
-        <button className="bg-[#2d3b48] text-sm text-white  rounded-md p-2">
+        <button className="bg-[#2d3b48] px-6 text-sm text-white  rounded-lg transition-all hover:scale-105 p-2 shadow-xl">
           Create Project
         </button>
       </div>
       {/* <Sticky enabled={true} top={0}   > */}
       <div className="flex  gap-10 bg-white px-8 pt-3">
         <DashMenuItems name={"Overview"} icon={GrOverview}/>
-        <DashMenuItems name={"Board"} icon={FaBoxes}/>
+        <DashMenuItems name={"List"} icon={IoList}/>
         <DashMenuItems name={"Dicussion"} icon={GrOverview}/>
         <DashMenuItems name={"TimeLine"} icon={MdTimeline}/>
-        <DashMenuItems name={"Files"} icon={IoList}/>
+        <DashMenuItems name={"Board"} icon={FaBoxes}/>
       </div>
       <hr className="border-gray-200" />
     {/* </Sticky> */}
