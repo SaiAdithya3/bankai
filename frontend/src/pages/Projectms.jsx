@@ -6,8 +6,6 @@ import { MdCalendarMonth } from "react-icons/md";
 import { MdBiotech } from "react-icons/md";
 import { LuFiles } from "react-icons/lu";
 import { TbBulldozer } from "react-icons/tb";
-import { LuForklift } from "react-icons/lu";
-import { IoSnowOutline } from "react-icons/io5";
 import StatusBadge from "../utils/utilcomp/StatusBadge";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";

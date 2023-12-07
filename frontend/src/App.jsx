@@ -9,10 +9,10 @@ import CustomerPage from 'src/pages/CustomerPage';
 import Construction from 'src/pages/Construction';
 import SearchHOC from 'src/utils/utilcomp/SearchHOC';
 import Projectms from 'src/pages/Projectms';
-import OverView from 'src/components/PMS/pages/OverView';
 import Accounts from './pages/Accounts';
 import Activities from './pages/Activities';
 import NotFound from './pages/NotFound';
+import FMS from './components/PMS/pages/FMS';
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
             <Route path="/customers" element={<CustomerPage />} />
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<Projectms />} />
-            <Route path="/projects/:projectId/overview" element={<OverView/>} />
+            <Route path="/projects/:projectId/fms" element={<FMS/>} />
             <Route path="/accounts" element={<Accounts/>} />
             <Route path="/activities" element={<Activities/>} />
             <Route path="*" element={<NotFound/>} />
