@@ -51,7 +51,7 @@ const CustomerCard = (props) => {
                         <span className='bg-green-200 text-green-800 px-3 rounded'>Registered</span>
                         <span className='bg-yellow-200 text-yellow-800 px-3 rounded'>2nd releases</span>
                     </div>
-                    <Link to={`/customers/${name}`}>
+                    <Link to={`/projects/${project}/${flat}`}>
                         <button className="bg-gray-800 hover:scale-110 transition-all text-white px-3 text-xs py-1 rounded-lg shadow">View </button>
                     </Link>
                 </div>

@@ -13,6 +13,8 @@ import Accounts from './pages/Accounts';
 import Activities from './pages/Activities';
 import NotFound from './pages/NotFound';
 import FMS from './components/PMS/pages/FMS';
+import FlatDetail from './components/FlatDetail/FlatDetail';
+import Profile from './pages/Profile';
 
 
 function App() {
@@ -35,8 +37,10 @@ function App() {
             <Route path="/projects/:projectId" element={<Projectms />} />
             <Route path="/projects/:projectId/overview" element={<ProjectDetail />} />
             <Route path="/projects/:projectId/fms" element={<FMS/>} />
+            <Route path="/projects/:projectId/:flatName" element={<FlatDetail/>} />
             <Route path="/accounts" element={<Accounts/>} />
             <Route path="/activities" element={<Activities/>} />
+            <Route path="/profile" element={<Profile/>} />
             <Route path="*" element={<NotFound/>} />
             <Route path="/:Link" element={<Project2 />} />
           </Routes>

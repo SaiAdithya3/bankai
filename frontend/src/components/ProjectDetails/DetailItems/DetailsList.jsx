@@ -106,6 +106,7 @@ const DetailsList = () => {
                                     size={flatDetails.size}
                                     status={flatDetails.status}
                                     price={flatDetails.price}
+                                    project={selectedProject.name}
                                     owner={flatDetails.owner}
                                     editLink={flatName}
                                 />

@@ -89,7 +89,7 @@ const CustomerPage = () => {
                   BOOKING STATUS
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Owner
+                  Loan / Self  
                 </th>
                 <th scope="col" className="px-6 py-3">
                   <span className="sr-only">Edit</span>
@@ -104,6 +104,15 @@ const CustomerPage = () => {
                 flatName="A-101"
                 status="booked"
                 projectName="Roayl Villas"
+                customerName="Balls Shiva"
+                editLink="/"
+              />
+              <CustomerTableRow
+                key="2"
+                index="2"
+                flatName="C-581"
+                status="booked"
+                projectName="Burj Khalifa"
                 customerName="Balls Shiva"
                 editLink="/"
               />
