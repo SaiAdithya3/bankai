@@ -79,35 +79,46 @@ const FlatDetail = () => {
                         </div>
 
                         <div className='px-4 py-2 w-full flex items-center justify-between'>
+                            <div className="flex w-full">
 
-                            <div className='flex items-center gap-3 w-full'>
-                                <MdLocalPhone className='border text-3xl p-1 rounded' />
-                                <h1 className='text-black text-xs font-semibold'>Phone Number <span className=' block text- font-light'>1210842</span></h1>
-                            </div>
-                            <div className='flex items-center gap-3 w-full'>
-                                <PiAlienDuotone className='border text-3xl p-1 rounded' />
-                                <h1 className='text-black text-xs font-semibold'>Social Handle: <span className=' block text- font-light'>onlyfans.com/basam</span></h1>
-                            </div>
-                            <div className='flex items-center gap-3 w-full'>
-                                <VscLocation className='border text-3xl p-1 rounded' />
-                                <h1 className='text-black text-xs font-semibold'>Address: <span className=' block text- font-light'>Palm Jumeriah</span></h1>
-                            </div>
-                            <div className='flex items-center gap-3 w-full'>
-                                <LiaBrainSolid className='border text-3xl p-1 rounded' />
-                                <h1 className='text-black text-xs font-semibold'>Brain: <span className=' block text- font-light'>Not Found</span></h1>
-                            </div>
-                            <div className='flex items-center gap-3 w-full'>
-                                <LiaBoneSolid className='border text-3xl p-1 rounded' />
-                                <h1 className='text-black text-xs font-semibold'>Number of Bones: <span className=' block text- font-light'>206</span></h1>
-                            </div>
-                            <div className='flex items-center gap-3 w-full'>
-                                <MdOutlineEmail className='border text-3xl p-1 rounded' />
-                                <h1 className='text-black text-xs font-semibold'>Mail Id: <span className=' block text- font-light'>laxmikanth@elaka.com</span></h1>
-                            </div>
+                                <div className='flex items-center gap-3 w-full'>
+                                    <MdLocalPhone className='border text-3xl p-1 rounded' />
+                                    <h1 className='text-black text-xs font-semibold'>Phone Number <span className=' block text- font-light'>1210842</span></h1>
+                                </div>
+                                <div className='flex items-center gap-3 w-full'>
+                                    <PiAlienDuotone className='border text-3xl p-1 rounded' />
+                                    <h1 className='text-black text-xs font-semibold'>Social Handle: <span className=' block text- font-light'>onlyfans.com/basam</span></h1>
+                                </div>
+                                <div className='flex items-center gap-3 w-full'>
+                                    <VscLocation className='border text-3xl p-1 rounded' />
+                                    <h1 className='text-black text-xs font-semibold'>Address: <span className=' block text- font-light'>Palm Jumeriah</span></h1>
+                                </div>
+                                <div className='flex items-center gap-3 w-full'>
+                                    <LiaBrainSolid className='border text-3xl p-1 rounded' />
+                                    <h1 className='text-black text-xs font-semibold'>Brain: <span className=' block text- font-light'>Not Found</span></h1>
+                                </div>
+                                <div className='flex items-center gap-3 w-full'>
+                                    <LiaBoneSolid className='border text-3xl p-1 rounded' />
+                                    <h1 className='text-black text-xs font-semibold'>Number of Bones: <span className=' block text- font-light'>206</span></h1>
+                                </div>
+                                <div className='flex items-center gap-3 w-full'>
+                                    <MdOutlineEmail className='border text-3xl p-1 rounded' />
+                                    <h1 className='text-black text-xs font-semibold'>Mail Id: <span className=' block text- font-light'>laxmikanth@elaka.com</span></h1>
+                                </div>
 
-
+                            </div>
                         </div>
-
+                        <div className="flex gap-4 px-4 py-5">
+                            <h1 className='text-sm rounded-xl p-3 font-semibold'>Loan Type: <span className='bg-purple-300 mx-1 px-2 py-0.5 text-xs rounded-full text-purple-800'> Home Loan</span></h1>
+                            <h1 className='text-sm rounded-xl p-3 font-semibold'>Payment Status: <span className='bg-cyan-300 mx-1 px-2 py-0.5 text-xs rounded-full text-cyan-800'> Sanctioned</span></h1>
+                            <h1 className='text-sm rounded-xl p-3 font-semibold'>Registration Status: <span className='bg-yellow-300 mx-1 px-2 py-0.5 text-xs rounded-full text-yellow-800'> Not completed</span></h1>
+                        </div>
+                        <div className="flex flex-col gap-2 border rounded-xl p-4 mx-4 ">
+                            <h1 className="text-sm font-semibold">Bank Details:<span className='mx-2 font-light '>ICICI Bank</span> </h1>
+                            <h1 className="text-sm font-semibold">Sanctioned Amount:<span className='mx-2 font-light '> 78 Lakhs</span> </h1>
+                            <h1 className="text-sm font-semibold">Rate of Interest:<span className='mx-2 font-light '> 69%</span> </h1>
+                            <h1 className="text-sm font-semibold">Sanctioned Date:<span className='mx-2 font-light '>15 Sept, 2021</span> </h1>
+                        </div>
                     </div>
                 </div>
 
