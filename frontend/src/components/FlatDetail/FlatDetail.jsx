@@ -10,6 +10,10 @@ import { PiAlienDuotone } from "react-icons/pi";
 import { VscLocation } from "react-icons/vsc";
 import { LiaBrainSolid } from "react-icons/lia";
 import { LiaBoneSolid } from "react-icons/lia";
+import TransactionTableRow from '../PMS/components/TransactionTableRow';
+import { FaRegFilePdf } from "react-icons/fa6";
+import { FiDownload } from "react-icons/fi";
+
 
 
 
@@ -31,7 +35,7 @@ const FlatDetail = () => {
 
 
 
-                <div className="flex w-full m-3 flex-col rounded-xl items-center p-4 border">
+                <div className="flex w-full m-3 my-4 flex-col rounded-xl items-center p-4 border">
                     <h1 className='font-semibold w-full text-left rounded-full px-2 text-md'>Flat Details: </h1>
                     <div className="flex w-full">
                         <div className='flex items-center gap-2 p-4 w-full'>
@@ -62,7 +66,7 @@ const FlatDetail = () => {
                 </div>
 
 
-                <div className="flex flex-col w-full m-3 rounded-xl items-center p-4 border">
+                <div className="flex flex-col w-full m-3 my-4 rounded-xl bg-gray-50 items-center p-4 border">
                     <h1 className='font-semibold text-left w-full rounded-full px-2 text-md'>Customer Details: </h1>
                     <div className="flex flex-col w-full items-start justify center">
                         <div className='flex items-start p-4 justify-between w-full '>
@@ -75,7 +79,7 @@ const FlatDetail = () => {
                         </div>
 
                         <div className='px-4 py-2 w-full flex items-center justify-between'>
-                            
+
                             <div className='flex items-center gap-3 w-full'>
                                 <MdLocalPhone className='border text-3xl p-1 rounded' />
                                 <h1 className='text-black text-xs font-semibold'>Phone Number <span className=' block text- font-light'>1210842</span></h1>
@@ -104,6 +108,86 @@ const FlatDetail = () => {
 
                         </div>
 
+                    </div>
+                </div>
+
+
+
+
+                <div className="flex w-full p-4 gap-4">
+                    <div className="flex flex-col border bg--50 rounded-xl p-4 w-full">
+                        <h1 className="text-md pb-4 pl-2  font-semibold ">Recent Transactions</h1>
+
+                        <table className="w-full text-sm text-left rtl:text-right text-gray-500  overflow-y-auto">
+                            <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
+                                <tr>
+                                    <th scope="col" className="px-6 py-3">
+                                        #
+                                    </th>
+                                    <th scope="col" className="px-6 py-3">
+                                        DD number
+                                    </th>
+                                    <th scope="col" className="px-6 py-3">
+                                        DETAIL
+                                    </th>
+                                    <th scope="col" className="px-6 py-3">
+                                        AMOUNT
+                                    </th>
+                                    <th scope="col" className="px-6 py-3">
+                                        DATE & TIME
+                                    </th>
+                                    <th scope="col" className="px-6 py-3">
+                                        TRANSACTION
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <TransactionTableRow index={1} flatName='D123' detail='Maintenance' type='income' date='02 Aug' price='₹1,000' editLink='#' />
+                                <TransactionTableRow index={2} flatName='A101' detail='Registration' type='expense' date='08 Aug' price='₹1,000' editLink='#' />
+                                <TransactionTableRow index={3} flatName='C236' detail='Flooring' type='expense' date='27 Aug' price='₹8,000' editLink='#' />
+                                <TransactionTableRow index={4} flatName='D301' detail='Margin ' type='income' date='15 Aug' price='₹4,000' editLink='#' />
+                                <TransactionTableRow index={5} flatName='D301' detail='RCC' type='income' date='15 Aug' price='₹5,000' editLink='#' />
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="flex flex-col  items-center rounded-xl p-4 border w-full">
+                        <h1 className="pb-4 pl-2 w-full text-md font-semibold ">Documents</h1>
+                        <div className='hover:bg-gray-50 mb-2 cursor-pointer w-full flex px-6 py-4 justify-between gap-2 items-center border shadow rounded-xl'>
+                            <div className="flex gap-2">
+                                <FaRegFilePdf className='text-black text-xl' />
+                                <h1 className="text-sm font-semibold">Agreement of Sale</h1>
+                            </div>
+                            <FiDownload />
+                        </div>
+                        <div className='hover:bg-gray-50 my-2 cursor-pointer w-full flex px-6 py-4 justify-between gap-2 items-center border shadow rounded-xl'>
+                            <div className="flex gap-2">
+                                <FaRegFilePdf className='text-black text-xl' />
+                                <h1 className="text-sm font-semibold">Agreement of Constuction</h1>
+                            </div>
+                            <FiDownload />
+                        </div>
+                        <div className='hover:bg-gray-50 my-2 cursor-pointer w-full flex px-6 py-4 justify-between gap-2 items-center border shadow rounded-xl'>
+                            <div className="flex gap-2">
+                                <FaRegFilePdf className='text-black text-xl' />
+                                <h1 className="text-sm font-semibold">Sale Deed</h1>
+                            </div>
+                            <FiDownload />
+                        </div>
+                        <div className='hover:bg-gray-50 my-2 cursor-pointer w-full flex px-6 py-4 justify-between gap-2 items-center border shadow rounded-xl'>
+                            <div className="flex gap-2">
+                                <FaRegFilePdf className='text-black text-xl' />
+                                <h1 className="text-sm font-semibold">Booking Form</h1>
+                            </div>
+                            <FiDownload />
+                        </div>
+                        <div className='hover:bg-gray-50 my-2 cursor-pointer w-full flex px-6 py-4 justify-between gap-2 items-center border shadow rounded-xl'>
+                            <div className="flex gap-2">
+                                <FaRegFilePdf className='text-black text-xl' />
+                                <h1 className="text-sm font-semibold">Loan Sanction Letter</h1>
+                            </div>
+                            <FiDownload />
+                        </div>
                     </div>
                 </div>
             </div>
