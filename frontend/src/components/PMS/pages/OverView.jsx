@@ -23,16 +23,19 @@ const OverView = (props) => {
               link={"fms"}
               name="Finance Management System"
               color="bg-green-100"
+              hoverColor="bg-green-300"
             />
             <PmsCard
               link={"wms"}
               name="Work Management System"
               color="bg-blue-100"
+              hoverColor="bg-blue-300"
             />
             <PmsCard
               link={"ams"}
               name="Account Management System"
               color="bg-pink-100"
+              hoverColor="bg-pink-300"
             />
           </div>
           <div className="flex justify-center gap-6 w-full ">
@@ -40,16 +43,19 @@ const OverView = (props) => {
               link={"wms"}
               name="Work Management System"
               color="bg-slate-100"
+              hoverColor="bg-slate-300"
             />
             <PmsCard
               link={"wms"}
               name="Work Management System"
               color="bg-teal-100"
+              hoverColor="bg-teal-300"
             />
             <PmsCard
               link={"wms"}
               name="Work Management System"
               color="bg-orange-100"
+              hoverColor="bg-orange-300"
             />
           </div>
         </div>

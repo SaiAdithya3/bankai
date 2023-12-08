@@ -11,6 +11,9 @@ import SearchHOC from 'src/utils/utilcomp/SearchHOC';
 import Projectms from 'src/pages/Projectms';
 import OverView from 'src/components/PMS/pages/OverView';
 import Wms from 'src/components/PMS/pages/WMS/Wms';
+import Accounts from './pages/Accounts';
+import Activities from './pages/Activities';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -32,7 +35,9 @@ function App() {
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<Projectms />} />
             <Route path="/projects/:projectId/overview" element={<OverView/>} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="/accounts" element={<Accounts/>} />
+            <Route path="/activities" element={<Activities/>} />
+            <Route path="*" element={<NotFound/>} />
             <Route path="/:Link" element={<Project2 />} />
             <Route path="/projects/:projectId/Wms" element={<Wms />} />
           </Routes>
