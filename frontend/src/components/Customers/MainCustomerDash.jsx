@@ -3,15 +3,17 @@ import { useMainDashContext } from "../../context/AppDataContext";
 import CustomerHero from "./CustomerHero";
 const GridComponent = lazy(() => import("./CustomerItems/GridView"));
 const ListComponent = lazy(() => import("./CustomerItems/ListView"));
+const AnalyticsComponent = lazy(() => import("./CustomerItems/AnalyticsView"));
 
 const components = {
     Grid: GridComponent,
     List: ListComponent,
+    Analytics: AnalyticsComponent,
 };
 
 const MainCustomerDash = () => {
-  const { activeMenuItem } = useMainDashContext();
-  const ComponentToRender = components[activeMenuItem] || null;
+  const { CustomerDetailItem } = useMainDashContext();
+  const ComponentToRender = components[CustomerDetailItem] || null;
 
   return (
     <>

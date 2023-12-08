@@ -7,7 +7,7 @@ const OverviewComponent = lazy(() => import("./DashItems/DashOverView"));
 const BoardComponent = lazy(() => import("./DashItems/BoardComponent"));
 const DiscussionComponent = lazy(() => import("./DashItems/DiscussionComponent"));
 const TimelineComponent = lazy(() => import("./DashItems/TimelineComponent"));
-const ListComponent = lazy(() => import("./../ProjectDetails/DetailItems/DetailsList"));
+const ListComponent = lazy(() => import("./DashItems/ListOverView"));
 
 const components = {
   Overview: OverviewComponent,

@@ -14,7 +14,7 @@ const Projectms = () => {
   const { projectId } = useParams();
   return (
     <>
-      <div className=" flex-col p-8 bg-gray-100/50 flex items-center  w-full justify-center">
+      <div className=" flex-col p-8 bg-gray-100/50 flex items-center h-full  w-full justify-start">
         <div className="flex items-center p-8 w-full justify-between">
           <h1 className=" text-2xl tracking-wide text-black font-semibold">
             {" "}

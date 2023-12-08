@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import StatusBadge from '../utils/utilcomp/StatusBadge';
-import MainDash from '../components/Dashboard/MainDash';
-import { MainDashProvider } from '../context/AppDataContext';
+import React from 'react';
 import { useParams } from 'react-router-dom';
-import { IoNotificationsOutline } from 'react-icons/io5';
-import { CiSearch } from 'react-icons/ci';
 import DashHero from '../components/Dashboard/DashHero';
-import { useMainDashContext } from '../context/AppDataContext';
 
 
 const ProjectDetail = () => {

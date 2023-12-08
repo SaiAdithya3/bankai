@@ -4,6 +4,7 @@ import { PiExport } from 'react-icons/pi';
 import { BiSolidGridAlt } from "react-icons/bi";
 import { FaListUl } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
+import { SiSimpleanalytics } from "react-icons/si";
 import Sticky from 'react-stickynode';
 import ToggleButton from '../../utils/utilcomp/ToggleButton';
 
@@ -22,6 +23,7 @@ const CustomerHero = () => {
                             <div className='gap-2 w-full flex items-center '>
                                 <ToggleButton name={"Grid"} icon={BiSolidGridAlt} />
                                 <ToggleButton name={"List"} icon={FaListUl} />
+                                <ToggleButton name={"Analytics"} icon={SiSimpleanalytics} />
 
                             </div>
                             <div className="flex py-2 w-full  items-center justify-between relative">

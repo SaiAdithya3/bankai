@@ -17,8 +17,13 @@ const ProjectDetailsHero = (props) => {
       <div className="   ">
         <div className=" px-8 py-4   bg-white flex items-center justify-between">
           <div className="flex items-center justify-center gap-2">
-            <Link to="/projects"><h1 className="text-2xl font-semibold text-gray-500">Projects </h1></Link>
-            <h2 className="text-xl tracking-tight font-bold  text-black"> / {params}</h2>
+          <h1 className=" text-2xl p-3 tracking-wide text-black font-semibold">
+            {" "}
+            <Link to="/projects"> Projects / </Link>
+            <span className="text-2xl font-semibold text-gray-500">
+              {params}
+            </span>{" "}
+          </h1>
           </div>
           <div className='flex items-center gap-4 justify-end'>
             <button className={`text-sm px-6 flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all hover:text-white gap-2 bg-white border text-black py-2 rounded-lg shadow-xl`}><PiExport className="text-lg"/> Export to CSV</button>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiFeather } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const TableRow = ({ index, flatName, size, status, price, editLink }) => {
     const isBooked = status === 'booked';
@@ -18,10 +19,11 @@ const TableRow = ({ index, flatName, size, status, price, editLink }) => {
                 )}
             </td>
             <td className="px-6 py-4">{price}</td>
+            <td className="px-6 py-4">🏗️🧱</td>
             <td className="px-6 py-4 text-right">
-                <a href={editLink} className="font-medium ">
+                <Link to={editLink} className="font-medium ">
                     <FiFeather className='text-gray-500 mr-3 cursor-pointer text-2xl border rounded-md p-1 border-gray-300'/>
-                </a>
+                </Link>
             </td>
         </tr>
     );

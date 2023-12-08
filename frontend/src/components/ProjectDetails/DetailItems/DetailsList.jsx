@@ -107,7 +107,7 @@ const DetailsList = () => {
                                     status={flatDetails.status}
                                     price={flatDetails.price}
                                     owner={flatDetails.owner}
-                                    editLink={flatDetails.editLink}
+                                    editLink={flatName}
                                 />
                             ))}
                         </tbody>

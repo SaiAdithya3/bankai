@@ -20,14 +20,14 @@ const OverView = (props) => {
         <div className="flex flex-col justify-center gap-6">
           <div className="flex justify-center gap-6 w-full   ">
             <PmsCard
-              link={"fms"}
-              name="Finance Management System"
+              link={"overview"}
+              name="Overview of the details of the Project"
               color="bg-green-100"
               hoverColor="bg-green-300"
             />
             <PmsCard
-              link={"wms"}
-              name="Work Management System"
+              link={"fms"}
+              name="Finance Management System"
               color="bg-blue-100"
               hoverColor="bg-blue-300"
             />
@@ -52,8 +52,8 @@ const OverView = (props) => {
               hoverColor="bg-teal-300"
             />
             <PmsCard
-              link={"wms"}
-              name="Work Management System"
+              link={"ams"}
+              name="Accounts Management System"
               color="bg-orange-100"
               hoverColor="bg-orange-300"
             />

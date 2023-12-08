@@ -20,7 +20,7 @@ const DashMenuItems = ({ name, icon }) => {
         {name}
       </h1>
       {activeMenuItem === name && (
-        <div className="w-[100%] h-1  rounded bg-black/60"></div>
+        <div className="w-full h-1  rounded bg-black/80"></div>
       )}
     </div>
   );
