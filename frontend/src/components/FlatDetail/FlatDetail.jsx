@@ -36,44 +36,71 @@ const FlatDetail = () => {
 
 
                 <div className="flex w-full m-3 my-4 flex-col rounded-xl items-center p-4 border">
-                    <h1 className='font-semibold w-full text-left rounded-full px-2 text-md'>Flat Details: </h1>
+                    <h1 className='font-semibold w-full text-left rounded-full px-2 text-lg'>Flat Details: </h1>
                     <div className="flex w-full">
-                        <div className='flex items-center gap-2 p-4 w-full'>
-                            <TbBuildingSkyscraper className='border text-3xl p-1 rounded' />
-                            <h1 className='text-black text-xs font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbBuildingSkyscraper className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
                         </div>
-                        <div className='flex items-center gap-2 p-4 w-full'>
-                            <BiHomeAlt className='border text-3xl p-1 rounded' />
-                            <h1 className='text-black text-xs font-semibold'>Flat No.  <span className='block font-light'>{flatName}</span></h1>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <BiHomeAlt className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Flat No.  <span className='block font-light'>{flatName}</span></h1>
                         </div>
-                        <div className='flex items-center gap-2 p-4 w-full'>
-                            <MdCalendarMonth className='border text-3xl p-1 rounded' />
-                            <h1 className='text-black text-xs font-semibold'>Start Date: <span className=' block text- font-light'>02 Aug, 2023</span></h1>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <MdCalendarMonth className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Start Date: <span className=' block text- font-light'>02 Aug, 2023</span></h1>
                         </div>
-                        <div className='flex items-center gap-2 p-4 w-full'>
-                            <TbProgress className='border text-3xl p-1 rounded' />
-                            <h1 className='text-black text-xs font-semibold'>Status: <span className='block font-light'>Home Loan - SBI</span></h1>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbProgress className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Status: <span className='block font-light'>Home Loan - SBI</span></h1>
                         </div>
-                        <div className='flex items-center gap-2 p-4 w-full'>
-                            <TbBuildingSkyscraper className='border text-3xl p-1 rounded' />
-                            <h1 className='text-black text-xs font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbBuildingSkyscraper className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
                         </div>
-                        <div className='flex items-center gap-2 p-4  w-full'>
-                            <TbBuildingSkyscraper className='border text-3xl p-1 rounded' />
-                            <h1 className='text-black text-xs font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
+                        <div className='flex items-center gap-3 p-4  w-full'>
+                            <TbBuildingSkyscraper className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
+                        </div>
+                    </div>
+                    <div className="flex w-full my-2">
+                        
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <BiHomeAlt className='border text-4xl p-1 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Size:  <span className='block font-light'>2,315 sqft.</span></h1>
+                        </div>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <MdCalendarMonth className='border text-4xl p-1 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Start Date: <span className=' block text- font-light'>02 Aug, 2023</span></h1>
+                        </div>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbProgress className='border text-4xl p-1 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Status: <span className='block font-light'>Home Loan - SBI</span></h1>
+                        </div>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbBuildingSkyscraper className='border text-4xl p-1 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Project Name: <span className='text-md block text- font-light'>{projectId}</span></h1>
+                        </div>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbBuildingSkyscraper className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-sm font-semibold'>Project Name: <span className=' block text- font-light'>{projectId}</span></h1>
+                        </div>
+                        <div className='flex items-center gap-3 p-4 w-full'>
+                            <TbProgress className='border text-4xl p-1.5 rounded' />
+                            <h1 className='text-black text-md font-semibold'>Status: <span className='block font-light'>Home Loan - SBI</span></h1>
                         </div>
                     </div>
                 </div>
 
 
                 <div className="flex flex-col w-full m-3 my-4 rounded-xl bg-gray-50 items-center p-4 border">
-                    <h1 className='font-semibold text-left w-full rounded-full px-2 text-md'>Customer Details: </h1>
+                    <h1 className='font-semibold text-left w-full rounded-full px-2 text-lg'>Customer Details: </h1>
                     <div className="flex flex-col w-full items-start justify center">
                         <div className='flex items-start p-4 justify-between w-full '>
                             <div className='flex items-center gap-2'>
                                 <span className={`bg-teal-400 px-2.5 text-white py-1 rounded-full`}>A</span>
                                 <div className='flex flex-col ml-2'>
-                                    <span className='text-gray-800 font-semibold'>Bhupendar Jogi</span>
+                                    <span className='text-gray-800 text-md font-semibold'>Bhupendar Jogi</span>
                                 </div>
                             </div>
                         </div>
@@ -82,28 +109,28 @@ const FlatDetail = () => {
                             <div className="flex w-full">
 
                                 <div className='flex items-center gap-3 w-full'>
-                                    <MdLocalPhone className='border text-3xl p-1 rounded' />
-                                    <h1 className='text-black text-xs font-semibold'>Phone Number <span className=' block text- font-light'>1210842</span></h1>
+                                    <MdLocalPhone className='border text-4xl p-1.5 rounded' />
+                                    <h1 className='text-black text-md font-semibold'>Phone Number <span className=' block text- font-light'>1210842</span></h1>
                                 </div>
                                 <div className='flex items-center gap-3 w-full'>
-                                    <PiAlienDuotone className='border text-3xl p-1 rounded' />
-                                    <h1 className='text-black text-xs font-semibold'>Social Handle: <span className=' block text- font-light'>onlyfans.com/basam</span></h1>
+                                    <PiAlienDuotone className='border text-4xl p-1.5 rounded' />
+                                    <h1 className='text-black text-md font-semibold'>Social Handle: <span className=' block text- font-light'>onlyfans.com/basam</span></h1>
                                 </div>
                                 <div className='flex items-center gap-3 w-full'>
-                                    <VscLocation className='border text-3xl p-1 rounded' />
-                                    <h1 className='text-black text-xs font-semibold'>Address: <span className=' block text- font-light'>Palm Jumeriah</span></h1>
+                                    <VscLocation className='border text-4xl p-1.5 rounded' />
+                                    <h1 className='text-black text-md font-semibold'>Address: <span className=' block text- font-light'>Palm Jumeriah</span></h1>
                                 </div>
                                 <div className='flex items-center gap-3 w-full'>
-                                    <LiaBrainSolid className='border text-3xl p-1 rounded' />
-                                    <h1 className='text-black text-xs font-semibold'>Brain: <span className=' block text- font-light'>Not Found</span></h1>
+                                    <LiaBrainSolid className='border text-4xl p-1.5 rounded' />
+                                    <h1 className='text-black text-md font-semibold'>Brain: <span className=' block text- font-light'>Not Found</span></h1>
                                 </div>
                                 <div className='flex items-center gap-3 w-full'>
-                                    <LiaBoneSolid className='border text-3xl p-1 rounded' />
-                                    <h1 className='text-black text-xs font-semibold'>Number of Bones: <span className=' block text- font-light'>206</span></h1>
+                                    <LiaBoneSolid className='border text-4xl p-1.5 rounded' />
+                                    <h1 className='text-black text-md font-semibold'>Number of Bones: <span className=' block text- font-light'>206</span></h1>
                                 </div>
                                 <div className='flex items-center gap-3 w-full'>
-                                    <MdOutlineEmail className='border text-3xl p-1 rounded' />
-                                    <h1 className='text-black text-xs font-semibold'>Mail Id: <span className=' block text- font-light'>laxmikanth@elaka.com</span></h1>
+                                    <MdOutlineEmail className='border text-4xl p-1.5 rounded' />
+                                    <h1 className='text-black text-md font-semibold'>Mail Id: <span className=' block text- font-light'>laxmikanth@elaka.com</span></h1>
                                 </div>
 
                             </div>
@@ -119,6 +146,9 @@ const FlatDetail = () => {
                             <h1 className="text-sm font-semibold">Rate of Interest:<span className='mx-2 font-light '> 69%</span> </h1>
                             <h1 className="text-sm font-semibold">Sanctioned Date:<span className='mx-2 font-light '>15 Sept, 2021</span> </h1>
                         </div>
+                    </div>
+                    <div className="flex border mx-4 p-4 rounded-xl">
+                        <h1 className="text-lg font-semibold">Transaction Amounts</h1>
                     </div>
                 </div>
 
