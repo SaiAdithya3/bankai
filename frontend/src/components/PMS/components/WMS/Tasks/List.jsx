@@ -30,26 +30,26 @@ const List = () => {
         {/* </div> */}
 
         <div className=" w-full  flex  justify-evenly gap-14">
-        <th className="border-l w-1/4 flex items-center">
-          <AiFillTags className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
-          <p className="text-gray-900 whitespace-nowrap">Tags</p>
-        </th>
-        <th className="border-l w-1/4 flex items-center">
-          <TbProgress className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
-          <p className="text-gray-900 whitespace-nowrap">Status</p>
-        </th>
-        <th className="border-l w-1/4 flex items-center">
-          <IoIosPerson className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
-          <p className="text-gray-900 whitespace-nowrap">Assigned To</p>
-        </th>
-        <th className="border-l w-1/4 flex items-center">
-          <MdOutlinePriorityHigh className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
-          <p className="text-gray-900 whitespace-nowrap">Priority</p>
-        </th>
-        <th className="border-l w-1/5 flex items-center">
-          <FiFeather className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
-          <p className="text-gray-900 whitespace-nowrap">Due date</p>
-        </th>
+          <th className="border-l w-1/4 flex items-center">
+            <AiFillTags className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <p className="text-gray-900 whitespace-nowrap">Tags</p>
+          </th>
+          <th className="border-l w-1/4 flex items-center">
+            <TbProgress className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <p className="text-gray-900 whitespace-nowrap">Status</p>
+          </th>
+          <th className="border-l w-1/4 flex items-center">
+            <IoIosPerson className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <p className="text-gray-900 whitespace-nowrap">Assigned To</p>
+          </th>
+          <th className="border-l w-1/4 flex items-center">
+            <MdOutlinePriorityHigh className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <p className="text-gray-900 whitespace-nowrap">Priority</p>
+          </th>
+          <th className="border-l w-1/5 flex items-center">
+            <FiFeather className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <p className="text-gray-900 whitespace-nowrap">Due date</p>
+          </th>
         </div>
         {/* </div> */}
       </tr>
