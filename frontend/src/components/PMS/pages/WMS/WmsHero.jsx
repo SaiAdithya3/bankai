@@ -32,9 +32,14 @@ const WmsHero = (props) => {
           </div>
         </div>
         {/* <Sticky enabled={true} top={0}   > */}
-        <div className="flex  gap-10 bg-white px-8 pt-3">
+        <div className="flex  gap-12 bg-white px-8 pt-3">
           <WmsDashMenuItem name={"Overview"} icon={GrOverview} />
           <WmsDashMenuItem name={"Tasks"} icon={GrOverview} />
+          <WmsDashMenuItem name={"Reports"} icon={GrOverview} />
+          <WmsDashMenuItem name={"Resources"} icon={GrOverview} />
+          <WmsDashMenuItem name={"TimeLine"} icon={GrOverview} />
+          <WmsDashMenuItem name={"Teams"} icon={GrOverview} />
+          <WmsDashMenuItem name={"Issues"} icon={GrOverview} />
         </div>
         <hr className="border-gray-200" />
         {/* </Sticky> */}
