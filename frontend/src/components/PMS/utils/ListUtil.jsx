@@ -30,7 +30,7 @@ const ListUtil = (props) => {
       {isSideModalVisible && (
         // <Sticky  enabled={true} top={0}>
 
-        <div className="   fixed  top-[4.6rem]  overflow-auto  border-r border-2  transition-all  w-[50vw] h-[90vh]    -right-10 bg-white  ">
+        <div className="   fixed  top-[4.55rem]  overflow-auto  border-r-2 border-21471    transition-all  w-[50vw] h-[90vh]    -right-10 bg-white  ">
           <SideTaskModal />
         </div>
         // </Sticky>
