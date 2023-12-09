@@ -8,6 +8,7 @@ import EditorToolbar, {
 } from "src/components/PMS//utils/Editor";
 import ReactQuill from "react-quill";
 import { SlLike } from "react-icons/sl";
+// import 'react-quill/dist/quill.snow.css';
 
 import styled from "styled-components";
 import { MdOutlineDone } from "react-icons/md";
@@ -19,18 +20,21 @@ import { FiUser } from "react-icons/fi";
 import { HiOutlineCalendar } from "react-icons/hi2";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { MdPriorityHigh } from "react-icons/md";
+import Sticky from "react-stickynode";
 
 const SideTaskModal = () => {
-  const [state, setState] = React.useState({ value: null });
+  const [value, setValue] = useState(null)
   const [toolbarvisible, setToolbarVisible] = useState(false);
 
-  const handleChange = (value) => {
-    setState({ value });
+  const handleChange = (newValue) => {
+    setValue(newValue);
   };
   return (
     <>
       <div>
-        <div className="flex justify-between px-7 py-4">
+        {/* <Sticky   > */}
+        <div className="flex  shadow-sm justify-between bg-white px-7 py-4">
+
           <div>
             <button className="border px-2 flex items-center  justify-center gap-2 py-1 text-sm rounded-md ">
               <MdOutlineDone className="w-4 h-4" />
@@ -57,6 +61,8 @@ const SideTaskModal = () => {
           </div>
         </div>
         <hr className="w-full" />
+        {/* </Sticky> */}
+
         <div className="px-3 py-4">
           <div>
             <h1
@@ -122,7 +128,7 @@ const SideTaskModal = () => {
             <div className=" border  rounded-lg w-[90%]">
               <QuilEditor
                 theme="snow"
-                value={state.value}
+                value={value}
                 onChange={handleChange}
                 placeholder={"Enter Descriptiony or Task Details..."}
                 modules={modules}
@@ -157,11 +163,11 @@ const QuilEditor = styled(ReactQuill)`
   .ql-container {
     border: none;
     ::-webkit-scrollbar {
-        width: 8px;
-        color: red;
-        background-color: #f5f5f5;
-        border-radius: 10px;
-    }
+      width: 8px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      cursor: pointer;
+  }
 
   }
   

@@ -29,24 +29,25 @@ const List = () => {
           </th>
         </div>
 
-        <div className=" w-full  flex  justify-evenly gap-24">
+        <div className=" w-full  flex  justify-evenly gap-14">
           <th className="border-l flex items-center">
-            <AiFillTags className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <AiFillTags className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Tags</p>
           </th>
           <th className="border-l flex items-center">
-            <TbProgress className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <TbProgress className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Status</p>
           </th>
           <th className="border-l flex items-center">
-            <IoIosPerson className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <IoIosPerson className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Assigned To</p>
           </th>
           <th className="border-l flex items-center">
-            <MdOutlinePriorityHigh className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+            <MdOutlinePriorityHigh className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Priority</p>
           </th>
-          <th>
+          <th className="border-l flex items-center">
+            <FiFeather className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Due date</p>
           </th>
         </div>
@@ -64,7 +65,7 @@ const List = () => {
           ) : (
             <BiSolidUpArrow className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
           )}
-          <h1 className=" text-lg font-semibold">Task 1</h1>
+          <h1 className=" text-lg font-semibold">To-Do List</h1>
           <h2 className="text-xs text-gray-700">(06)</h2>
         </div>
         {isListUtilVisible && (
@@ -91,8 +92,8 @@ const List = () => {
           ) : (
             <BiSolidUpArrow className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
           )}
-          <h1 className=" text-lg font-semibold">Task 1</h1>
-          <h2 className="text-xs text-gray-700">(06)</h2>
+          <h1 className=" text-lg font-semibold">Pending</h1>
+          <h2 className="text-xs text-gray-700">(03)</h2>
         </div>
         {isListUtilVisible && (
           <div className="">
@@ -105,6 +106,28 @@ const List = () => {
               modal="1"
             />
             <ListUtil modal="2" />
+            <ListUtil />
+          </div>
+        )}
+      </div>
+      <div className=" mt-4  border rounded-md">
+        <div
+          className="flex p-4 items-center gap-2 cursor-pointer bg-[#f3f4f6]/30"
+          onClick={toggleListUtilVisibility}
+        >
+          {isListUtilVisible ? (
+            <BiSolidDownArrow className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+          ) : (
+            <BiSolidUpArrow className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+          )}
+          <h1 className=" text-lg font-semibold">Completed</h1>
+          <h2 className="text-xs text-gray-700">(03)</h2>
+        </div>
+        {isListUtilVisible && (
+          <div className="">
+            <ListUtil />
+            <ListUtil modal="2" />
+            <ListUtil />
           </div>
         )}
       </div>

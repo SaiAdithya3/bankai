@@ -8,7 +8,7 @@ import List from "../../components/WMS/Tasks/List";
 
 const Wms = () => {
   return (
-    <div className="p-10">
+    <div className="p-10   ">
       <div>
         <Header />
       </div>
