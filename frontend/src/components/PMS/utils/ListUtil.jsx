@@ -6,7 +6,7 @@ import EditorToolbar, { modules, formats } from "./../utils/Editor";
 import ReactQuill from "react-quill";
 import "./quil.css";
 import styled from "styled-components";
-import SideTaskModal from "../components/WMS/Tasks/SideTaskModal";
+import SideTaskModal from "../components/WMS/Dashboard/Tasks/SideTaskModal";
 import { FiUser } from "react-icons/fi";
 import { HiOutlineCalendar } from "react-icons/hi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
