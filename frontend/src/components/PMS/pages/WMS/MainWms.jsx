@@ -1,5 +1,5 @@
 import React, { lazy, Suspense, useState } from "react";
-import WmsHero from "./WmsHero";
+const WmsHero = lazy(()=>  import("./WmsHero"));
 import { useMainDashContext } from "../../../../context/AppDataContext";
 const OverviewComponent = lazy(() => import("../../components/WMS/Dashboard/Overview"));
 const TaskComponent = lazy(() => import("../../components/WMS/Dashboard/Tasks/List"));
@@ -27,5 +27,6 @@ const MainWms = () => {
     </>
   );
 };
+
 
 export default MainWms;

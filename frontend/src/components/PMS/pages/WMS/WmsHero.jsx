@@ -11,12 +11,13 @@ import ToggleButton from "../../utils/ToggleButton";
 
 const WmsHero = (props) => {
   const { params } = props;
+
   return (
     <Sticky enabled={true} top={0}   >
       <div className="   ">
-        <div className="flex px-10 py-6 justify-between items-center">
+        <div className="flex bg-white px-10 py-6 justify-between items-center">
           <div className="  flex  flex-col gap-1 ">
-            <h1 className="text-2xl  font-semibold">Hello, Sara</h1>
+            <h1 className="text-2xl  font-semibold">Hello, Sara. you have a thick ass! 🍑</h1>
             <h2 className="text-sm text-gray-600 font-semibold">
               Today is, Sunday, 23 January 2023
             </h2>
@@ -35,6 +36,7 @@ const WmsHero = (props) => {
         <div className="flex  gap-10 bg-white px-8 pt-3">
           <WmsDashMenuItem name={"Overview"} icon={GrOverview} />
           <WmsDashMenuItem name={"Tasks"} icon={GrOverview} />
+          <WmsDashMenuItem name={"Resources"} icon={GrOverview} />
         </div>
         <hr className="border-gray-200" />
         {/* </Sticky> */}
