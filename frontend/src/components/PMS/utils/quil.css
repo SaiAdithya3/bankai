@@ -1,0 +1,14 @@
+
+
+/* YourCustomStyles.css */
+
+/* Add your custom styles for the Quill text editor */
+.custom-quill-editor {
+    /* Example styles, modify as needed */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    /* Add more styles as needed */
+  }
+  
