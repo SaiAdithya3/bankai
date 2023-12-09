@@ -32,8 +32,8 @@ const OverView = (props) => {
               hoverColor="bg-blue-300"
             />
             <PmsCard
-              link={"ams"}
-              name="Account Management System"
+              link={"sales"}
+              name="Sales Management System"
               color="bg-pink-100"
               hoverColor="bg-pink-300"
             />

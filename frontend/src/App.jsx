@@ -14,11 +14,13 @@ import Wms from "src/components/PMS/pages/WMS/Wms";
 import Accounts from "./pages/Accounts";
 import Activities from "./pages/Activities";
 import NotFound from "./pages/NotFound";
-import FMS from "./components/PMS/pages/FMS";
+import FMS from "./components/PMS/pages/FMS/FMS";
 import FlatDetail from "./components/FlatDetail/FlatDetail";
 import Profile from "./pages/Profile";
 import { useLocation } from "react-router-dom";
 import WmsDashboard from "./components/PMS/pages/WMS/WmsDashboard";
+import SalesDashboard from "./components/PMS/pages/Sales/SalesDashboard";
+import FMSDashboard from "./components/PMS/pages/FMS/FMSDashboard";
 
 function App() {
   // const navigate = useNavigate();
@@ -47,21 +49,16 @@ function App() {
             <Route path="/customers" element={<CustomerPage />} />
             <Route path="/construction" element={<Construction />} />
             <Route path="/projects/:projectId" element={<Projectms />} />
-            <Route
-              path="/projects/:projectId/overview"
-              element={<ProjectDetail />}
-            />
-            <Route path="/projects/:projectId/fms" element={<FMS />} />
-            <Route
-              path="/projects/:projectId/:flatName"
-              element={<FlatDetail />}
-            />
+            <Route path="/projects/:projectId/overview" element={<ProjectDetail />} />
+            <Route path="/projects/:projectId/fms" element={<FMSDashboard />} />
+            <Route path="/projects/:projectId/:flatName" element={<FlatDetail />} />
             <Route path="/accounts" element={<Accounts />} />
             <Route path="/activities" element={<Activities />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/:Link" element={<Project2 />} />
             <Route path="/projects/:projectId/Wms" element={<WmsDashboard />} />
+            <Route path="/projects/:projectId/sales" element={<SalesDashboard />} />
           </Routes>
         </div>
       </div>
