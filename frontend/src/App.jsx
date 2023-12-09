@@ -18,6 +18,7 @@ import FMS from "./components/PMS/pages/FMS";
 import FlatDetail from "./components/FlatDetail/FlatDetail";
 import Profile from "./pages/Profile";
 import { useLocation } from "react-router-dom";
+import WmsDashboard from "./components/PMS/pages/WMS/WmsDashboard";
 
 function App() {
   // const navigate = useNavigate();
@@ -60,7 +61,7 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/:Link" element={<Project2 />} />
-            <Route path="/projects/:projectId/Wms" element={<Wms />} />
+            <Route path="/projects/:projectId/Wms" element={<WmsDashboard />} />
           </Routes>
         </div>
       </div>
