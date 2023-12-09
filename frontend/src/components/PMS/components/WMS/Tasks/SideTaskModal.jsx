@@ -23,7 +23,7 @@ import { MdPriorityHigh } from "react-icons/md";
 import Sticky from "react-stickynode";
 
 const SideTaskModal = () => {
-  const [value, setValue] = useState(null)
+  const [value, setValue] = useState(null);
   const [toolbarvisible, setToolbarVisible] = useState(false);
 
   const handleChange = (newValue) => {
@@ -32,9 +32,8 @@ const SideTaskModal = () => {
   return (
     <>
       <div>
-        {/* <Sticky   > */}
-        <div className="flex  shadow-sm justify-between bg-white px-7 py-4">
-
+        {/* <Sticky  enabled={true} top={10}  > */}
+        <div className="flex sticky top-0    border-b justify-between bg-white px-7 py-4">
           <div>
             <button className="border px-2 flex items-center  justify-center gap-2 py-1 text-sm rounded-md ">
               <MdOutlineDone className="w-4 h-4" />
@@ -60,7 +59,7 @@ const SideTaskModal = () => {
             </button>
           </div>
         </div>
-        <hr className="w-full" />
+        {/* <hr className="w-full" /> */}
         {/* </Sticky> */}
 
         <div className="px-3 py-4">
@@ -135,7 +134,7 @@ const SideTaskModal = () => {
                 modules={modules}
                 formats={formats}
                 className="no-scrollbar"
-                style={{ height: "300px", padding: "10px"}}
+                style={{ height: "300px", padding: "10px" }}
                 onClick={() => setToolbarVisible(!toolbarvisible)}
               />
               <EditorToolbar />
@@ -146,10 +145,7 @@ const SideTaskModal = () => {
                 <h1 className=" text-xl font-mono">Comments</h1>
                 <MdOutlineKeyboardArrowDown className="w-5 h-5" />
               </button>
-
-
-              </div>
-              
+            </div>
           </div>
         </div>
       </div>
@@ -167,8 +163,6 @@ const QuilEditor = styled(ReactQuill)`
       background-color: #f5f5f5;
       border-radius: 10px;
       cursor: pointer;
+    }
   }
-
-  }
-  
 `;

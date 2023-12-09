@@ -11,7 +11,8 @@ import { FiUser } from "react-icons/fi";
 import { HiOutlineCalendar } from "react-icons/hi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { FiChevronRight } from "react-icons/fi";
-import 'src/index.css'
+import Sticky from "react-stickynode";
+import "src/index.css";
 
 const ListUtil = (props) => {
   // const { modal } = props;
@@ -27,13 +28,15 @@ const ListUtil = (props) => {
   return (
     <>
       {isSideModalVisible && (
-        <div className="absolute no-scrollbar   overflow-auto top-[4.8rem] border-r border-2  transition-all  w-[50vw]  right-0 bg-white  h-[100vh]">
+        // <Sticky  enabled={true} top={0}>
+
+        <div className="   fixed  top-[4.6rem]  overflow-auto  border-r border-2  transition-all  w-[50vw] h-[90vh]    -right-10 bg-white  ">
           <SideTaskModal />
         </div>
+        // </Sticky>
       )}
-      
 
-      <div >
+      <div>
         <tr className="hover:bg-[#f3f4f6]/70 border-t   w-full p-2.5 flex justify-between  ">
           <div
             className="w-full  hover:cursor-pointer flex items-center  justify-between pr-5 "
@@ -45,15 +48,15 @@ const ListUtil = (props) => {
               <img
                 src={doneoutline}
                 alt=""
-                className="w-5 opacity-60 h-5 mr-2"
+                className="w-5 opacity-60 z-[-1] h-5 mr-2"
               />
               <p className="text-gray-900 whitespace-nowrap">Task 1</p>
             </td>
 
             <div className="flex items-center gap-5">
-              {
-                hovered && (<FiChevronRight className="  w-5 h-5 text-gray-500/50" />)
-              }
+              {hovered && (
+                <FiChevronRight className="  w-5 h-5 text-gray-500/50" />
+              )}
               <hr className=" w-[1px] h-[1.9rem]  bg-gray-400/30 " />
             </div>
           </div>

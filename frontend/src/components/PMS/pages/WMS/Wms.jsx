@@ -4,18 +4,25 @@ import { BiSolidGridAlt } from "react-icons/bi";
 import { FaListUl } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
 import ToggleButton from "src/components/PMS/utils/ToggleButton";
+import SearchHOC from "src/utils/utilcomp/SearchHOC";
 import List from "../../components/WMS/Tasks/List";
+import Sticky from "react-stickynode";
 
 const Wms = () => {
   return (
-    <div className="p-10   ">
-      <div>
-        <Header />
+    <>
+      <Sticky enabled={true} top={0}>
+        <SearchHOC />
+      </Sticky>
+      <div className="p-10">
+        <div>
+          <Header />
+        </div>
+        <div className="mt-8">
+          <List />
+        </div>
       </div>
-      <div className="mt-8">
-        <List />
-      </div>
-    </div>
+    </>
   );
 };
 
