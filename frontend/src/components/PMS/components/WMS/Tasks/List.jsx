@@ -11,7 +11,7 @@ import { IoIosPerson } from "react-icons/io";
 import { MdOutlinePriorityHigh } from "react-icons/md";
 
 const List = () => {
-  const isBooked = 1;
+  // const isBooked = 1;
   const [isListUtilVisible, setListUtilVisible] = useState(false);
 
   const toggleListUtilVisibility = () => {
@@ -23,13 +23,13 @@ const List = () => {
       <tr className="bg-white border border-collapse hover:bg-gray-50  rounded-md  p-3 flex justify-between    ">
         {/* <div className=""> */}
         {/* <div className="w-full"> */}
-          <th className="w-full flex  items-center ">
-            <BsListTask className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
-            <p className="text-gray-900 whitespace-nowrap">Task Name</p>
-          </th>
+        <th className="w-full flex  items-center ">
+          <BsListTask className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+          <p className="text-gray-900 whitespace-nowrap">Task Name</p>
+        </th>
         {/* </div> */}
 
-        {/* <div className=" w-full  flex  justify-evenly gap-14"> */}
+        <div className=" w-full  flex  justify-evenly gap-14">
           <th className="border-l w-1/4 flex items-center">
             <AiFillTags className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Tags</p>
@@ -50,7 +50,7 @@ const List = () => {
             <FiFeather className="text-gray-500 mr-2 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
             <p className="text-gray-900 whitespace-nowrap">Due date</p>
           </th>
-        {/* </div> */}
+        </div>
         {/* </div> */}
       </tr>
 
@@ -131,7 +131,28 @@ const List = () => {
           </div>
         )}
       </div>
-      
+
+      <div className=" mt-4  border rounded-md">
+        <div
+          className="flex p-4 items-center gap-2 cursor-pointer bg-[#f3f4f6]/30"
+          onClick={toggleListUtilVisibility}
+        >
+          {isListUtilVisible ? (
+            <BiSolidDownArrow className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+          ) : (
+            <BiSolidUpArrow className="text-gray-500 mr-3 cursor-pointer text-2xl  rounded-md p-1 border-gray-300" />
+          )}
+          <h1 className=" text-lg font-semibold">Completed</h1>
+          <h2 className="text-xs text-gray-700">(03)</h2>
+        </div>
+        {isListUtilVisible && (
+          <div className="">
+            <ListUtil />
+            <ListUtil modal="2" />
+            <ListUtil />
+          </div>
+        )}
+      </div>
     </>
   );
 };
