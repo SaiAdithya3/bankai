@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { FaArrowTrendUp, FaArrowTrendDown } from "react-icons/fa6";
 import { Bar, Line, Pie } from 'react-chartjs-2';
-import BarChart from '../components/BarChart';
-import TransactionTableRow from '../components/TransactionTableRow';
+import BarChart from '../../components/BarChart';
+import TransactionTableRow from '../../components/TransactionTableRow';
 
 
 export const UserData = [

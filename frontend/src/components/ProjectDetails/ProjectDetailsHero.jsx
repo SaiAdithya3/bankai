@@ -47,7 +47,7 @@ const ProjectDetailsHero = (props) => {
             <DashMenuItems name={"Overview"} icon={GrOverview} />
             <DashMenuItems name={"ListView"} icon={IoList} />
             <DashMenuItems name={"Board"} icon={FaBoxes} />
-            <DashMenuItems name={"Board"} icon={FaBoxes} />
+            <DashMenuItems name={"Documents"} icon={PiExport} />
           </div>
           <hr className="border-gray-200" />
           {/* </Sticky> */}
