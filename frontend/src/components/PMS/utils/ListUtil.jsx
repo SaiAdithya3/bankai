@@ -6,7 +6,7 @@ import EditorToolbar, { modules, formats } from "./../utils/Editor";
 import ReactQuill from "react-quill";
 import "./quil.css";
 import styled from "styled-components";
-import SideTaskModal from "../components/WMS/Tasks/SideTaskModal";
+import SideTaskModal from "../components/WMS/Dashboard/Tasks/SideTaskModal";
 import { FiUser } from "react-icons/fi";
 import { HiOutlineCalendar } from "react-icons/hi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
@@ -30,7 +30,7 @@ const ListUtil = (props) => {
       {isSideModalVisible && (
         // <Sticky  enabled={true} top={0}>
 
-        <div className="   fixed  top-[4.6rem]  overflow-auto  border-r border-2  transition-all  w-[50vw] h-[90vh]    -right-10 bg-white  ">
+        <div className="   fixed  top-[4.55rem]  overflow-auto  border-r-2 border-21471    transition-all  w-[50vw] h-[90vh]    -right-10 bg-white  ">
           <SideTaskModal />
         </div>
         // </Sticky>

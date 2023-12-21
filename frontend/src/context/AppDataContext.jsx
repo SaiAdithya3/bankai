@@ -14,6 +14,9 @@ export const MainDashProvider = ({ children }) => {
   const [activeMenuLinks, setActiveMenuLink] = useState("Ongoing");
   const [projectdetailItem, setProjectDetailItem] = useState("Overview");
   const [CustomerDetailItem, setCustomerDetailItem] = useState("Grid");
+  const [wmsDashboardItem, setWmsDashboardItem] = useState("Overview");
+  const [salesDashboardItem, setsalesDashboardItem] = useState("Overview");
+  const [fmsDashboardItem, setfmsDashboardItem] = useState("Overview");
   const [SidebarLinks, setSidebarLinks] = useState(baseRoute);
 
   return (
@@ -29,6 +32,12 @@ export const MainDashProvider = ({ children }) => {
         setProjectDetailItem,
         CustomerDetailItem,
         setCustomerDetailItem,
+        wmsDashboardItem,
+        setWmsDashboardItem,
+        salesDashboardItem,
+        setsalesDashboardItem,
+        fmsDashboardItem,
+        setfmsDashboardItem,
       }}
     >
       {children}

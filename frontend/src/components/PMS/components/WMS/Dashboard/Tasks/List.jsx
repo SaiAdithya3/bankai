@@ -19,6 +19,8 @@ const List = () => {
   };
   return (
     <>
+    <div className="p-10 w-full">
+
       {/* Header Row */}
       <tr className="bg-white border border-collapse hover:bg-gray-50  rounded-md  p-3 flex justify-between    ">
         {/* <div className=""> */}
@@ -153,6 +155,8 @@ const List = () => {
           </div>
         )}
       </div>
+    </div>
+
     </>
   );
 };

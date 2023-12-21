@@ -1,7 +1,7 @@
 import React from "react";
 import doneoutline from "src/components/PMS/utils/doneoutline.png";
 import { useState } from "react";
-import "../../../utils/quill2.snow.css";
+import "../../../../utils/quill2.snow.css";
 import EditorToolbar, {
   modules,
   formats,
