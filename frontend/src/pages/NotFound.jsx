@@ -5,7 +5,7 @@ const NotFound = () => {
     <>
       <div className="w-full p-10">
         <h1 className="text-3xl">
-          Ikkada Em ledu dengey ra puka 😘😘
+          There's nothing here!
         </h1>
       </div>
     </>

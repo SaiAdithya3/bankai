@@ -11,10 +11,9 @@ const GridView = () => {
 
           <CustomerCard name="Shiva Don" color="bg-teal-600" project="Trump Towers" flat="A 105" />
           <CustomerCard name="Mourya Model" color="bg-red-600" project="Sky Towers" flat="D 306" />
-          <CustomerCard name="Kyudie" color="bg-purple-600" project="Weeknd Towers" flat="C 905" />
+          <CustomerCard name="Sri akka" color="bg-purple-600" project="Weeknd Towers" flat="C 905" />
           <CustomerCard name="Taylor Swift" color="bg-slate-600" project="Burj Al Arab" flat="F 265" />
           <CustomerCard name="Lana Del Rey" color="bg-blue-600" project="Bahamas" flat="D 826" />
-          <CustomerCard name="Sunny Leone" color="bg-yellow-600" project="Burj Khalifa" flat="B 305" />
           <CustomerCard name="Shiva Don" color="bg-teal-600" project="Trump Towers" flat="A 105" />
           <CustomerCard name="Mourya Model" color="bg-red-600" project="Sky Towers" flat="D 306" />
           <CustomerCard name="Shanthabai" color="bg-yellow-600" project="Burj Khalifa" flat="B 305" />

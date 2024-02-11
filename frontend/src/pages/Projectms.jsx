@@ -30,7 +30,7 @@ const Projectms = () => {
             <div className="flex flex-col gap-2">
               <h1 className="font-bold text-md flex items-center gap-2">
                 <MdOutlineLocationOn className="border rounded text-2xl p-1" />
-                Location: <span className="font-light">Islamabad</span>
+                Location: <span className="font-light">Hyderabad</span>
               </h1>
               <h1 className="font-bold text-md flex items-center gap-2">
                 <MdCalendarMonth className="border rounded text-2xl p-1" />
@@ -45,7 +45,7 @@ const Projectms = () => {
               </h1>
               <h1 className="font-bold text-md flex items-center gap-2">
                 <MdCalendarMonth className="border rounded text-2xl p-1" />
-                Really Nigga: <span className="font-light">Cheese Ma🕸️</span>
+                Completed by : <span className="font-light">02-10-2030</span>
               </h1>
             </div>
           </div>

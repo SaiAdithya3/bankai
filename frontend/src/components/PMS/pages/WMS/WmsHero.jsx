@@ -21,7 +21,7 @@ const WmsHero = (props) => {
       <div className="   ">
         <div className="flex bg-white px-10 py-6 justify-between items-center">
           <div className="  flex  flex-col gap-1 ">
-            <h1 className="text-2xl  font-semibold">Hello, Sara. you have a thick ass! 🍑</h1>
+            {/* <h1 className="text-2xl  font-semibold">Hello, Sara. you have a thick ass! 🍑</h1> */}
             <h2 className="text-sm text-gray-600 font-semibold">
               Today is, Sunday, 23 January 2023
             </h2>

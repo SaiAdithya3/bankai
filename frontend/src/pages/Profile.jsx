@@ -23,7 +23,7 @@ const Profile = () => {
 
             </div>
             <h1 className="text-7xl px-32 text-center">
-                MODDA GUDUV RAAAA!!!
+                
             </h1>
         </>
     )

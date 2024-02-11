@@ -47,7 +47,7 @@ const OverView = (props) => {
             />
             <PmsCard
               link={"wms"}
-              name="Work Management System"
+              name="Site Management System"
               color="bg-teal-100"
               hoverColor="bg-teal-300"
             />
