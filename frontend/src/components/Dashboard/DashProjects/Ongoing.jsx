@@ -20,7 +20,7 @@ const Ongoing = () => {
       </div> */}
       {/* </Sticky> */}
       <div className=" flex justify-between flex-wrap  gap-y-10  px-6  gap-2 ">
-        <ProjecTile color={color} image={image4} name={"Sulabh Complex"} />
+        <ProjecTile color={color} image={image4} name={"Amigos Complex"} />
         <ProjecTile color={color} image={image3} name={"Block no:38"} />
         <ProjecTile color={color} image={image2} name={"Bleach"} />
         <ProjecTile color={color} image={image3} name={"Sereite"} />

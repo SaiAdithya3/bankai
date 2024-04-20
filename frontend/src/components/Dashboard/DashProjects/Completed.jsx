@@ -19,7 +19,7 @@ const Completed = () => {
       </div> */}
       {/* </Sticky> */}
       <div className=" flex    justify-between flex-wrap  gap-y-10  px-6  gap-2 ">
-        <ProjecTile color={color} image={image1} name={"Sulabh Complex"} />
+        <ProjecTile color={color} image={image1} name={"Prestige Homes"} />
         <ProjecTile color={color} image={image8} name={"Block no:38"} />
         <ProjecTile color={color} image={image7} name={"Zanka no Tachi"} />
         <ProjecTile color={color} image={image8} name={"Sembonzakura"} />
